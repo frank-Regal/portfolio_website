@@ -1,9 +1,9 @@
 /*!
-  * Item: Willy Wonka Theme
-  * Description: Personal Portfolio Website Template
-  * Author/Developer: Sujal
+  * Description: Personal Portfolio Website
+  * Author/Developer: Frank Regal
   * Version: v1
   */
+
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
@@ -34,7 +34,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
+/* Full screen browser */
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -196,18 +196,18 @@ body{
     transform: rotate(90deg);
 }
 .logo img{
-    height: 80px;
+    height: 55px;
     position: absolute;
     top: 3%;
-    left: 2.5%;
-    opacity: .8;
+    left: 25px;
+    opacity: 0.5;
     z-index: 2;
     cursor: pointer;
     transition: all .4s ease;
 }
 .logo img:hover{
     opacity: 1;
-    transform: rotate(-45deg);
+    transform: rotate(-30deg);
 }
 #navigation-bar img{
     height: 55px;
@@ -1402,15 +1402,8 @@ form button:hover{
 }
 
 /*
-
-For devices with smaller width like mobile phone
-
-
+Mobile Phones
 */
-
-
-
-
 
 @media only screen and (max-width: 550px){
     .header-content{
@@ -1455,6 +1448,20 @@ For devices with smaller width like mobile phone
     #contact{
         display: none;
     }
+    .header-content .firstline{
+        z-index: 2;
+        font-weight:700;
+        font-family: poppins;
+        font-size: 40px;
+    }
+    .header-content .secondline{
+        z-index: 2;
+        font-size: 20px;
+        padding-top:18px ;
+        font-weight:500;
+        color: rgb(255, 255, 255,.8);
+    }
+    /*
     #breaker{
         height: 50vh;
         width: 200%;
@@ -1466,6 +1473,7 @@ For devices with smaller width like mobile phone
         z-index: 10;
         position: fixed;
     }
+    */
     @keyframes breakeranimate{
        0%{ transform : translateX(-100%)}
        50%{ transform : translateX(0%) }
@@ -1637,11 +1645,11 @@ For devices with smaller width like mobile phone
                 width: 90%;
             }
             #navigation-bar img{
-                height: 80px;
+                height: 55px;
                 position: absolute;
                 top: 15%;
-                left: 2.5%;
-                opacity: .8;
+                left: 25px;
+                opacity: .5;
                 transition: all .4s ease;
                 display: none;
             }
@@ -1910,6 +1918,8 @@ for tabs and large phones
     .contact{
         display: none;
     }
+
+    /*
     #breaker{
         height: 50vh;
         width: 200%;
@@ -1921,6 +1931,7 @@ for tabs and large phones
         z-index: 10;
         position: fixed;
     }
+    */
     @keyframes breakeranimate{
        0%{ transform : translateX(-100%)}
        50%{ transform : translateX(0%) }
@@ -2109,11 +2120,11 @@ for tabs and large phones
                 width: 70%;
             }
             #navigation-bar img{
-                height: 80px;
+                height: 55px;
                 position: absolute;
                 top: 15%;
-                left: 2.5%;
-                opacity: .8;
+                left: 25px;
+                opacity: .5;
                 transition: all .4s ease;
             }
             .blogs{

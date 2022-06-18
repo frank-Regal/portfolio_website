@@ -2,37 +2,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--meta data-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Frank Regal Personal Website" />
 	<meta name="keywords" content="portfolio" />
 	<meta name="author" content="Frank Regal" />
     <title>Frank Regal</title>
-  <!--favicon-img--> 
-   <link rel="icon" type="image/png" href="images/fr_logo_2.png">
-   <!--favicon-img-->
-   <!--main css file should not be removed -->
+    <!--meta data-->
+
+    <!--favicon-img--> 
+    <link rel="icon" type="image/png" href="images/fr_logo_2_invert.png">
+    <!--favicon-img-->
+
+    <!--main css file-->
     <link rel="stylesheet" href="css/index.css">
     <!--main css file-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <!--load java script file--> 
+    <!-- // ref: <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script> -->
+    <script src="js/gsap.min.js"></script>
+    <!--load java script file--> 
 </head>
 <body>
-    <!--contains all the div-->
+    <!--all div: start-->
     <div id="all">
-    <!--mouse  follower
-        <div class="cursor"></div>
-    mouse  follower-->
-    <!--loader-->
+
+        <!--loader-->
         <div id="loader">
             <span class="color">frank</span>regal 
         </div>
-    <!--loader-end-->
-    <!--link-screen-->
+        <!--loader-end-->
+
+        <!--link-screen-->
         <div id="breaker">
         </div>
         <div id="breaker-two">
         </div>
-    <!--link-screen-->
+        <!--link-screen-->
+        
         <!--Main-Section-->
         <!--Navigator-fullscreen-->
         <div id="navigation-content">
@@ -52,7 +60,7 @@
             </div>
         </div>
         <!--Navigator-Fullscreen END-->
-          <!--Home Page-->
+        <!--Home Page-->
         <!--Menubar-->
         <div id="navigation-bar">
             <img src="images/fr_logo_2.png" alt="logo">
@@ -63,16 +71,17 @@
             </div>
         </div>
         <!--Menubar End-->
-          <!--Header-->
+        <!--Header-->
         <div id="header">
             <div id="particles"></div>
               <!--Social Media Links-->
             <div class="social-media-links">
                 <a href="https://www.linkedin.com/in/frankregal/"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
                 <a href="https://github.com/frank-Regal"><img src="images/github.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                <a href="https://www.youtube.com/channel/UCKqEFZ2bOucRrW-6aYL8okw"><img src="images/youtube_invert.png" class="social-media" alt="youtube-logo"></a>
                 <a href="https://www.printables.com/social/26856-regal16/about"><img src="images/prusa_spool_mod_invert.png" class="social-media" alt="facebook-logo"></a>
                 <a href="https://www.etsy.com/shop/RegalPrinting?ref=shop_sugg"><img src="images/etsy_mod.png" class="social-media" alt="twitter-logo"></a>
-
+                
             </div>
             <!--Social Media Links end-->
             <div class="header-content">
@@ -80,7 +89,7 @@
                 <div class="firstline"><span class="color">frank</span>_regal</div>
                 <div class="secondline">
                     about@me~$:
-            <span class="txt-rotate color" data-period="2500"data-rotate='[ " mechanical engineer.", " programmer.", " roboticist." ]'></span>
+            <span class="txt-rotate color" data-period="1000"data-rotate='[ " mechanical engineer", " programmer", " roboticist" ]'></span>
             <span class="slash">|</span>
         </div>
                     <div class="contact">
@@ -93,45 +102,15 @@
             </div>
             <!--header image-->
             <div class="header-image">
-            <img src="images/profile_pic/slice_15.png" alt="logo">
+            <img src="images/profile_pic/apt_pic/apt_pic_2_750_1000_pixelate_5T.png" alt="logo">
             </div>
             <!--header image end-->
         </div>
-           <!--Header End-->
+        <!--Header End-->
         <!--HomePage End-->
         <!--Main-Section End-->
         <!--about-->
         <div id="about">
-            <div class="color-changer">
-            <div class="color-panel">
-                <img src="images/gear.png" alt="">
-            </div>
-            <div class="color-selector">
-                <div class="heading">Custom Colors</div>
-                <div class="colors">
-                    <ul >
-                    <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
-                    </li>
-                    <li>
-                        <a href="#bf5700" class="color-orange" title="color-orange"></a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
             <!--about content-->
             <div id="about-content">
                 <div class="about-header">
@@ -294,63 +273,36 @@
                     </div>
                     </div>
                 </div>
-            </div>
+        </div>
     <!--copyright-section You Can Remove After Downloading-->
-            <div class="footer">
+        <div class="footer">
              <div class="footer-text">
                  COPYRIGHT <img src="./images/copyright.png" alt="copyright-img" class="images" height="12px"> 2022 FRANK REGAL. ALL RIGHTS RESERVED.
              </div>
-            </div>
+        </div>
     <!--copyright-section-->
         </div>
         <!--about end-->
         <!--portfolio-->
         <div id="portfolio">
-            <div class="color-changer">
-                <div class="color-panel">
-                    <img src="images/gear.png" alt="">
-                </div>
-                <div class="color-selector">
-                    <div class="heading">Custom Colors</div>
-                    <div class="colors">
-                        <ul >
-                        <li>
-                            <a href="#0" class="color-red " title="color-red"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-purple" title="color-purple"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-malt" title="color-malt"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-green" title="color-green"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-blue" title="color-blue"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-orange" title="color-orange"></a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
             <div class="portfolio-header"> <span class="color"> My </span> Portfolio
             <span class ="header-caption"> Some Of My <span class="color"> Works</span></span></div>
-             <div id="portfolio-content">
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
+             
+            <!-- highlighted projects -->
+            <div id="portfolio-content">
+                <div class="portfolio portfolio-first">
+                    <div class="portfolio-text">
+                        <h2>App Idea</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
+                            expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div> 
+                    <div class="portfolio-image">
                         <img src="images/portfolio-first.jpg" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>App Idea</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
-                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
-                 </div>
-                 <div class="portfolio portfolio-second">
+                    </div>
+                     
+                </div>
+                <div class="portfolio portfolio-second">
                     <div class="portfolio-image">
                         <img src="images/portfolio-second.jpg" alt="portfolio-second">
                     </div>
@@ -361,7 +313,6 @@
                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
-             
                 <div class="portfolio portfolio-third">
                     <div class="portfolio-image">
                         <img src="images/portfolio-third.jpg" alt="portfolio-third">
@@ -384,15 +335,143 @@
                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
-                 </div>
-                    <!--copyright-section You Can Remove After Downloading-->
+            </div>
+            <!-- end highlighted projects -->
+
+            <!-- grid of projects -->
+            <div class="portfolio-content-project-grid">
+                <div class="portfolio-items-wrapper">
+                   
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/placeholder-two.png)"></div>
+                        
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/youtube_invert.png">
+                            </div>
+                            <div class="subtitle">
+                                Hello my name is frank and this a test.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/placeholder-two.png)"></div>
+                        
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/youtube_invert.png">
+                            </div>
+                            <div class="subtitle">
+                                Hello my name is frank and this a test.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/placeholder-two.png)"></div>
+                        
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/youtube_invert.png">
+                            </div>
+                            <div class="subtitle">
+                                Hello my name is frank and this a test.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/placeholder-two.png)"></div>
+                        
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/youtube_invert.png">
+                            </div>
+                            <div class="subtitle">
+                                Hello my name is frank and this a test.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/placeholder-two.png)"></div>
+                        
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/youtube_invert.png">
+                            </div>
+                            <div class="subtitle">
+                                Hello my name is frank and this a test.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/placeholder-two.png)"></div>
+                        
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/youtube_invert.png">
+                            </div>
+                            <div class="subtitle">
+                                Hello my name is frank and this a test.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/placeholder-two.png)"></div>
+                        
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/youtube_invert.png">
+                            </div>
+                            <div class="subtitle">
+                                Hello my name is frank and this a test.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/placeholder-two.png)"></div>
+                        
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/youtube_invert.png">
+                            </div>
+                            <div class="subtitle">
+                                Hello my name is frank and this a test.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio-item-wrapper">
+                        <div class="portfolio-img-background" style="background-image:url(images/placeholder-two.png)"></div>
+                        
+                        <div class="image-text-wrapper">
+                            <div class="logo-wrapper">
+                                <img src="images/youtube_invert.png">
+                            </div>
+                            <div class="subtitle">
+                                Hello my name is frank and this a test.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end grid of projects -->
+            
+            
+
+            <!--copyright-section You Can Remove After Downloading-->
             <div class="footer">
                 <div class="footer-text">
                     <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
                 </div>
-               </div>
-       <!--copyright-section-->
-             </div>
+            </div>
+            <!--copyright-section-->
+        </div>
         <!--portfolio end-->
         <!--blog-->
         <div id="blog">
@@ -617,15 +696,38 @@
      </div>
         <!--contact end-->
     </div>
-    <!--all the divisions-->
+    <!--all div: end-->
+
+    <!--division scripts-->
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
+    <!--divisiion scripts-->
+
     <!--particles script-->
     <script>
-  particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+    particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
     </script>
+    <!--particles script-->
+
+    <!--portfolio project grid script-->
+    <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover',() => {
+   
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout',() => {
+          
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+    </script>
+    <!--portfolio project grid script-->
 
 </body>
 </html>

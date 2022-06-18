@@ -885,7 +885,7 @@ padding-bottom: 40px;
         height: 400px;
         width: 40%;
     }
-.portfolio-image img::{
+.portfolio-image img::before{
     content: "";
     height: 100%;
     width: 100%;

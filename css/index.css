@@ -454,22 +454,24 @@ body{
     justify-content: center;
     height: auto;
     width: 100%;
-    padding:30px;
+    padding: 30px;
 }
 .about-header{
     height: auto;
     width: 100%;
     text-align: center;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font-size: 45px;
     font-family: raleway;
     color: whitesmoke;
-    padding:60px;
-    padding-bottom: 100px;
-    padding-top: 0px;
+    padding:10px;
+    padding-bottom: 30px;
+    padding-top: 50px;
     font-weight: 900;
 }
+
+
 .about-first-paragraph{
     color: whitesmoke;
     justify-content: center;
@@ -493,6 +495,13 @@ body{
     font-size: 24px;
     font-weight: 200;
 }
+
+.about-second-line .link .color{
+    font-size: 24px;
+    font-weight: 200;
+    font-family: poppins;
+}
+
 .about-main{
     display: flex;
     align-items: center;
@@ -507,6 +516,7 @@ body{
     width: 100%;
     height:100%;
     padding: 30px;
+    border-radius: 40px;
 }
 .about-img {
     width: 550px;
@@ -1072,7 +1082,7 @@ padding-bottom: 40px;
   vertical-align: center;
   font-family: poppins;
   color: whitesmoke;
-  background-color: #050505;
+  background-color: #333f48;
   transition: all .5s ease;
 }
 .blog-text h3{
@@ -1289,8 +1299,9 @@ form button:hover{
     display: flex;
     flex-direction: row;
     font-family: poppins;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
 }
 .footer .footer-text{
     position: relative;
@@ -1512,15 +1523,16 @@ Mobile Phone
         width: 100%;
         padding:30px;
     }
+    /*
     .about-header{
         color: whitesmoke;
-
         justify-content: center;
         font-size: 35px;
         font-family: raleway;
         padding:10px;
         font-weight: 900;
     }
+    */
     .about-first-paragraph{
         color: whitesmoke;
         justify-content: center;
@@ -1542,6 +1554,12 @@ Mobile Phone
     .about-second-line{
         opacity: .8;
         font-size: 15px;
+        font-weight: 200;
+    }
+    .about-second-line .link .color{
+        font-size: 15px;
+        font-weight: 200;
+        font-family: poppins;
     }
     .about-main{
         display: flex;
@@ -1557,12 +1575,15 @@ Mobile Phone
         width: 280px;
         height:220px;
         padding: 5px;
+        border-radius: 40px;
     }
     .about-img {
         width: 100%;
         height:250px;
         text-align: center;
         overflow: hidden;
+        /*order-radius: 5%;*/
+        /*border-radius: 20px;*/
     }
     .service{
         height:320px;
@@ -1701,7 +1722,7 @@ Mobile Phone
               vertical-align: center;
               font-family: poppins;
               color: whitesmoke;
-              background-color: #000000;
+              background-color: #333f48;
               transition: all .5s ease;
             }
             .blog-text h3{
@@ -1981,6 +2002,7 @@ Tablets
         width: 100%;
         padding:10px;
     }
+    /*
     .about-header{
         color: whitesmoke;
         justify-content: center;
@@ -1989,6 +2011,7 @@ Tablets
         padding:15px;
         font-weight: 900;
     }
+    */
     .about-first-paragraph{
         color: whitesmoke;
         justify-content: center;
@@ -2011,6 +2034,12 @@ Tablets
         opacity: .8;
         font-size: 24px;
     }
+
+    .about-second-line .link .color{
+        font-size: 24px;
+        font-weight: 200;
+        font-family: poppins;
+    }
     .about-main{
         display: flex;
         align-items: center;
@@ -2025,6 +2054,7 @@ Tablets
         width: 100%;
         height:380px;
         padding: 30px;
+        border-radius: 40px;
     }
     .about-img {
         width: 550px;
@@ -2159,7 +2189,7 @@ Tablets
         position: relative;
     }
     .blogs .img{
-        height: 60%;
+        height: 80%;
         width: 100%;
         overflow: hidden;
         transition: all .65s ease;
@@ -2190,7 +2220,7 @@ Tablets
       vertical-align: center;
       font-family: poppins;
       color: whitesmoke;
-      background-color: #050505;
+      background-color: #333f48;
       padding: 10px;
       transition: all .5s ease;
     }
@@ -2363,7 +2393,8 @@ Tablets
 /* ////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////// */
-/* ////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////// 
+@media all and (max-width: 9000px) and (min-width: 1441px)*/
 /*
 Not Sure
 */
@@ -2384,6 +2415,7 @@ Not Sure
         height:450px;
         padding: 30px;
         animation: opacity 1.4s ease ;
+        border-radius: 40px;
     }
     .about-img {
         width: 40%;
@@ -2404,6 +2436,13 @@ Not Sure
         font-size: 18px;
         font-weight: 200;
     }
+
+    .about-second-line .link .color{
+        font-size: 18px;
+        font-weight: 200;
+        font-family: poppins;
+    }
+    
 
     
     .cv a button{
@@ -2506,7 +2545,7 @@ Not Sure
       vertical-align: center;
       font-family: poppins;
       color: whitesmoke;
-      background-color: #050505;
+      background-color: #333f48;
       transition: all .5s ease;
     }
     .blog-text h3{

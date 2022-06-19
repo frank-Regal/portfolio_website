@@ -465,9 +465,9 @@ body{
     font-size: 45px;
     font-family: raleway;
     color: whitesmoke;
-    padding:10px;
-    padding-bottom: 30px;
-    padding-top: 60px;
+    padding:60px;
+    padding-bottom: 100px;
+    padding-top: 0px;
     font-weight: 900;
 }
 .about-first-paragraph{
@@ -490,7 +490,7 @@ body{
 }
 .about-second-line{
     opacity: .8;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 200;
 }
 .about-main{
@@ -505,16 +505,14 @@ body{
 }
 .about-img img{
     width: 100%;
-    height:380px;
+    height:100%;
     padding: 30px;
-    border-radius: 40px;
 }
 .about-img {
     width: 550px;
     height:auto;
     padding: 30px;
     padding-top: 10px;
-    border-radius: 40px;
 }
 
 #about-content a{
@@ -536,12 +534,13 @@ body{
     background: #bf5700;
     outline: none;
     font-size:20px;
-    font-family: aileron;
+    font-family: raleway;
     border-radius: 4px;
     font-weight: 400;
     cursor: pointer;
     position: relative;
     transition: all .4s ease;
+    font-weight: 900;
 
 }
 .cv a button:hover{
@@ -1283,7 +1282,7 @@ form button:hover{
 }
 
 .footer{
-    background: #080808;
+    background: #474747;
     width: 100%;
     padding: 20px;
     color: whitesmoke;
@@ -1558,14 +1557,12 @@ Mobile Phone
         width: 280px;
         height:220px;
         padding: 5px;
-        border-radius: 10%;
     }
     .about-img {
         width: 100%;
         height:250px;
         text-align: center;
         overflow: hidden;
-        border-radius: 10%;
     }
     .service{
         height:320px;
@@ -2005,7 +2002,7 @@ Tablets
         font-size: 35px
     }
     .about-first-line{
-        font-size: 32px;
+        font-size: 35px;
         opacity: 1;
         margin-bottom: 10px;
         display: block;
@@ -2028,14 +2025,12 @@ Tablets
         width: 100%;
         height:380px;
         padding: 30px;
-        border-radius: 40px;
     }
     .about-img {
         width: 550px;
         height:auto;
         padding: 30px;
         padding-top: 10px;
-        border-radius: 40px;
     }
     .cv a button{
         border:none;
@@ -2043,13 +2038,17 @@ Tablets
         color: whitesmoke;
         outline: none;
         font-size:20px;
-        font-family: aileron;
+        font-family: raleway;
         border-radius: 8px;
         font-weight: 400;
         cursor: pointer;
         position: relative;
         transition: all .4s ease;
-    
+        font-weight: 900;
+    }
+    .cv a button:hover{
+        opacity: 1;
+        transform: scale(1.05);
     }
     .service{
         height:auto;
@@ -2384,43 +2383,46 @@ Not Sure
         width: 100%;
         height:450px;
         padding: 30px;
-        border-radius: 40px;
         animation: opacity 1.4s ease ;
     }
     .about-img {
         width: 40%;
         height:450px;
         padding: 30px;
-        border-radius: 40px;
     }
     .about-first-line{
-        font-size: 45px;
+        font-size: 35px;
         opacity: 1;
         margin-bottom: 10px;
         display: block;
     }
      .about-first-line .color{
-         font-size: 46px;
+         font-size: 35px;
      }
     .about-second-line{
         opacity: .8;
-        font-size: 28px;
+        font-size: 18px;
         font-weight: 200;
     }
+
+    
     .cv a button{
-        background: transparent;
         border:none;
         padding: 25px 35px;
         color: whitesmoke;
         outline: none;
         font-size:30px;
-        font-family: aileron;
+        font-family: raleway;
         border-radius: 4px;
         font-weight: 400;
         cursor: pointer;
         position: relative;
         transition: all .4s ease;
-    
+        font-weight: 900;
+    }
+    .cv a button:hover{
+        opacity: 1;
+        transform: scale(1.05);
     }
     .service{
         height:400px;

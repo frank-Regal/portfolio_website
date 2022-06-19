@@ -60,7 +60,7 @@ input[type=number] {
       font-family: poppins;
       background-color: #202020;
       color: whitesmoke;
-      font-size: 40px;
+      font-size: 25px;
       width: 100%;
   }
 body{
@@ -1457,6 +1457,20 @@ Mobile Phone
     .contact{
         display: none;
     }
+    #loader{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:100vh;
+        position: fixed;
+        z-index:100;
+        font-family: poppins;
+        background-color: #202020;
+        color: whitesmoke;
+        font-size: 15px;
+        width: 100%;
+    }
     .header-image{
         float: right;
         height: auto;
@@ -1467,7 +1481,7 @@ Mobile Phone
         left: 0;
         bottom: 0;
         position: absolute;
-        padding: 30px;
+        padding: 15px;
         height: auto;
         display: flex;
         flex-direction: row;

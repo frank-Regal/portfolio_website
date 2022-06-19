@@ -60,7 +60,7 @@ input[type=number] {
       font-family: poppins;
       background-color: #202020;
       color: whitesmoke;
-      font-size: 70px;
+      font-size: 40px;
       width: 100%;
   }
 body{
@@ -1041,7 +1041,7 @@ padding-bottom: 40px;
     justify-content: center;
 }
 .blogs{
-    height: 420px;
+    height: 470px;
     width: 40%;
     margin: 20px;
     border-radius: 8px;
@@ -1049,7 +1049,7 @@ padding-bottom: 40px;
     overflow: hidden;
 }
 .blogs .img{
-    height: 80%;
+    height: 83%;
     width: 100%;
     overflow: hidden;
     transition: all .65s ease;
@@ -1061,7 +1061,7 @@ padding-bottom: 40px;
     bottom: 0;
     background: #bf5700;
     color: whitesmoke;
-    font-size: 18px;
+    font-size: 13px;
     text-align: center;
     font-weight: 400;
     font-family: poppins;
@@ -1086,18 +1086,19 @@ padding-bottom: 40px;
   transition: all .5s ease;
 }
 .blog-text h3{
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   height: 20%;
   padding: 20px;
   letter-spacing: 1px;
 }
 .blog-text p{
-    font-size: 18px;
-    opacity: .9;
-    font-weight: 400;
+    font-size: 15px;
+    opacity: .8;
+    font-weight: 50;
     height: 80%;
-    padding: 30px;
+    padding: 15px;
+    padding-top: 0px;
     letter-spacing: 1px;
   }
 .blogs:hover .img{
@@ -1292,23 +1293,35 @@ form button:hover{
 }
 
 .footer{
-    background: #474747;
+    background: #2b2b2b;
     width: 100%;
-    padding: 20px;
+    padding: 13px;
     color: whitesmoke;
     display: flex;
     flex-direction: row;
     font-family: poppins;
     justify-content: center;
     align-items: center;
+    padding-bottom: 3px;
     
 }
 .footer .footer-text{
     position: relative;
     display: inline;
     font-size: 12px;
-    font-weight: 200;
+    font-weight: 2;
     opacity: .8;
+}
+.footer-image{
+    display: flex;
+    flex-direction: row;
+    font-family: poppins;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.footer-image img{
+    padding-left: 6px;
 }
 .color-changer{
     height: auto;
@@ -1454,12 +1467,15 @@ Mobile Phone
         left: 0;
         bottom: 0;
         position: absolute;
-        padding: 10px;
+        padding: 30px;
         height: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+    .social-media-links a{
+        padding: 15px;
     }
     .header-content-box{
         padding-left: 0px;
@@ -1691,7 +1707,7 @@ Mobile Phone
                 position: relative;
             }
             .blogs .img{
-                height: 80%;
+                height: 83%;
                 width: 100%;
                 overflow: hidden;
                 transition: all .65s ease;
@@ -1702,7 +1718,7 @@ Mobile Phone
                 left: 0;
                 bottom: 0;
                 color: whitesmoke;
-                font-size: 18px;
+                font-size: 13px;
                 text-align: center;
                 font-weight: 400;
                 font-family: poppins;
@@ -1726,18 +1742,19 @@ Mobile Phone
               transition: all .5s ease;
             }
             .blog-text h3{
-              font-size: 24px;
+              font-size: 18px;
               font-weight: 200;
               height: 15%;
               padding: 10px;
               letter-spacing: 1px;
             }
             .blog-text p{
-                font-size: 15px;
-                opacity: .9;
-                font-weight: 200;
+                font-size: 12px;
+                opacity: .8;
+                font-weight: 50;
                 height: 85%;
-                padding: 20px;
+                padding: 15px;
+                padding-top: 0px;
                 letter-spacing: 1px;
               }
             .blogs:hover .img{
@@ -2189,7 +2206,7 @@ Tablets
         position: relative;
     }
     .blogs .img{
-        height: 80%;
+        height: 83%;
         width: 100%;
         overflow: hidden;
         transition: all .65s ease;
@@ -2200,7 +2217,7 @@ Tablets
         left: 0;
         bottom: 0;
         color: whitesmoke;
-        font-size: 18px;
+        font-size: 13px;
         text-align: center;
         font-weight: 400;
         font-family: poppins;
@@ -2225,18 +2242,19 @@ Tablets
       transition: all .5s ease;
     }
     .blog-text h3{
-      font-size: 28px;
+      font-size: 20px;
       font-weight: 200;
       height: 15%;
       padding: 10px;
       letter-spacing: 1px;
     }
     .blog-text p{
-        font-size: 17px;
-        opacity: .9;
-        font-weight: 200;
+        font-size: 15px;
+        opacity: .8;
+        font-weight: 50;
         height: 85%;
-        padding: 20px;
+        padding: 15px;
+        padding-top: 0px;
         letter-spacing: 1px;
       }
     .blogs:hover .img{
@@ -2505,7 +2523,7 @@ Not Sure
         opacity: .8;
     }
     .blogs{
-        height: 420px;
+        height: 470px;
         width: 30%;
         margin: auto;
         margin-top: 50px;
@@ -2514,7 +2532,7 @@ Not Sure
         overflow: hidden;
     }
     .blogs .img{
-        height: 80%;
+        height: 83%;
         width: 100%;
         overflow: hidden;
         transition: all .65s ease;
@@ -2525,7 +2543,7 @@ Not Sure
         left: 0;
         bottom: 0;
         color: whitesmoke;
-        font-size: 18px;
+        font-size: 13px;
         text-align: center;
         font-weight: 400;
         font-family: poppins;
@@ -2549,18 +2567,19 @@ Not Sure
       transition: all .5s ease;
     }
     .blog-text h3{
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 500;
       height: 20%;
       padding: 20px;
       letter-spacing: 1px;
     }
     .blog-text p{
-        font-size: 18px;
-        opacity: .9;
-        font-weight: 400;
+        font-size: 15px;
+        opacity: .8;
+        font-weight: 50;
         height: 80%;
-        padding: 30px;
+        padding: 15px;
+        padding-top: 0px;
         letter-spacing: 1px;
       }
     .blogs:hover .img{

@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <!--meta data-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Frank Regal Personal Website" />
+        <meta name="keywords" content="portfolio" />
+        <meta name="author" content="Frank Regal" />
+        <title>Frank Regal</title>
+        <!--meta data-->
+    
+        <!--favicon-img--> 
+        <link rel="icon" type="image/png" href="images/fr_logo_2_invert.png">
+        <!--favicon-img-->
+    
+        <!--main css file-->
+        <link rel="stylesheet" href="css/styles.css">
+        <!--main css file-->
+    
+        <!--load java script file--> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+        <!--<script src="js/gsap.min.js"></script>-->
+        <!--load java script file--> 
+    </head>
+    <body>
+        <!--all div: start-->
+
+        <!--// Page Navigation ========================================================= -->
+        <!--navigator-fullscreen-->
+
+        <!--navigator-fullscreen--end-->
+        <!--menubar-->
+        <div class="navigation-bar">
+            <img src="images/fr_logo_2.png" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar--End-->
+      
+        <div class="blog">
+        
+            <div class="blog-header">Portfolio</span>
+                <span class ="header-caption"><span class="color"></span>
+                Click on project tiles to learn more.
+            </span></div>
+                <div class="blog-content">
+                    <div class="blogs">
+                         <a href="https://www.youtube.com/watch?v=4oueRXrSgSI">
+                         <div class="img">
+                            <img src="images/portfolio/augre/augre_cover_small.png" alt="blog-one">
+                            <div class="blog-date">AR & Robotics</div>
+                         </div>
+                         <div class="blog-text">
+                             <h3>Human-Robot Teaming</h3>
+                             <p>My team and I in the Nuclear and Applied Robotics group 
+                                created an augemented reality base human-robot teaming system 
+                                called AugRE. The application allows users to supervise and command 
+                                robotic teammates. This work has recently been accepted for publication 
+                                in the 31st IEEE International Conference on Robot & Human Interactive 
+                                Communication conference (Ro-MAN 2022).
+                            </p>
+                         </div></a>
+                     </div>  
+                     <div class="blogs">
+                        <a href="project_pages/augmented_teleautonomy.html">
+                        <div class="img">
+                            <img src="images/portfolio/baxter_ar/baxter_cover_photo_small.png" alt="blog-two">
+                            <div class="blog-date">AR & Robotics</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Augmented Teleautonomy</h3>
+                            <p>Current methods of control for semi-autonomous robots that work in hazardous 
+                                environments do not provide the operator with enough situational awareness
+                                of the remote environment. This project strives to develop new methods 
+                                with augmented reality devices to allow operators to confidently and effortlessly control dual-arm remote mobile robotic manipulators. 
+                                This work is for the U.S. Government's Argonne National Lab
+                                and details are currently not available to the public.
+                        </div></a>
+                    </div>  
+                    <div class="blogs">
+                        <a href="https://drive.google.com/file/d/1r8UXWziQ_Ku1-LZGoyn3_m7jvFbt2HFR/view?usp=sharing">
+                            <div class="img">
+                                <img src="images/portfolio/haptics_project/haptics_final_design_small.png" alt="blog-four">
+                                <div class="blog-date">AR & Robotics</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>HoloLens 2 w/ Haptic Feedback</h3>
+                                <p>For UT Austin's ME 397 Haptics and Teleoperated Systems class with Dr. Ann Fey, my team
+                                    and I developed a vibro-tactile haptic device that mounts to the HoloLens 2. The 
+                                    device provided sequential vibrations to the users head to help locate robots and 
+                                    other items of interest faster in their environment. Development was done with 
+                                    Unreal Engine 4, C++, Raspberry-Pi, and a HoloLens 2.
+                                </p>
+                            </div></a>
+                    </div>   
+                     <div class="blogs">
+                        <a href="https://github.com/frank-Regal/cs393r_starter">
+                        <div class="img">
+                            <img src="images/portfolio/auto_robots/auto_robots_small.png" alt="blog-three">
+                            <div class="blog-date">Robot Autonomy</div>
+                        </div>
+                        <div class="blog-text">
+                            <h3>Autonomously Driving Car</h3>
+                            <p>For UT Austin's CS 393R Autonomous Robots class with Dr. Joydeep Biswas, my teammate and I created
+                                a complete nav-stack for autonomous navigation of an Akermann steering car. Debugging and
+                                tuning were performed in simulation. Developed algorithms were deployed on a physical (scaled model)
+                                car. Localization performed with a custom 2D-LiDAR particle filter and a custom RRT algorithm was created for planning.</p>
+                        </div></a>
+                    </div>     
+                    <div class="blogs">
+                        <a href="https://drive.google.com/file/d/1r2AIZJUsWhH48wvF9f3dn0MFkfdKZQre/view?usp=sharing">
+                            <div class="img">
+                                <img src="images/portfolio/digital_control/digital_control_cover_small.png" alt="blog-five">
+                                <div class="blog-date">Robot Control</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Robot Latency Compensation</h3>
+                                <p> For UT Austin's ME 397 Digital Controls class with 
+                                    Dr. Dongmei "Maggie" Chen, my team and I created a predictive digital control to compensate
+                                    for latency found in a specific AR human-robot teaming application (AugRE) that we built in
+                                    my lab (NRG). We used advanced control theory to apply a few different techniques such as 
+                                    lead compensators, pole placement, linear quadratic regulators (LQR), and Smith predictors to 
+                                    compensate the system for both constant and variable delays over a network.
+                                </p>
+                            </div></a>
+                    </div>
+                    <div class="blogs">
+                        <a href="https://docs.google.com/presentation/d/1lDvpG_wKVkKxDGf0cAsa3iIihvhOZtIM/edit?usp=sharing&ouid=101661046954650984360&rtpof=true&sd=true">
+                            <div class="img">
+                                <img src="images/portfolio/asbr_robots/asbr_cover_small.png" alt="blog-six">
+                                <div class="blog-date">Robot Control</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Motion Planning & Control</h3>
+                                <p>For UT Austin's ME 397 Algorithms for Sensor Based Robots class with Dr. Farshid Alambeigi, 
+                                    my teammate and I created algorithms to control a Kuka Quantec 6DOF robotic manipulator.
+                                    We used skrew theory to model and control the arm. At the end of the class we were able to
+                                    control and plan trajectories for robotic manipulators.
+                                    Impedence, admittance, hand-to-eye calibration, hand-eye calibration, virtual fixtures, point-cloud registration, 
+                                    pivot calibration algorithms and more were all developed from scratch.
+                                </p>
+                            </div></a>
+                    </div>
+                    <div class="blogs">
+                        <a href="https://youtu.be/YqiaMAZtBFw">
+                            <div class="img">
+                                <img src="images/portfolio/kilnbot/kilnbot_cover_small.png" alt="blog-seven">
+                                <div class="blog-date">Robot Design</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Magnetic Inspection Robot</h3>
+                                <p> I was tasked with creating an alternative
+                                    method to inspect boiler tube walls for corrosion to eliminate the need of
+                                    a human to enter into a hazardous environment. I developed a modular, wirelessly controlled, 3D printed, magnetic crawler.
+                                    Chain driven by two DC motors, the crawler was able to crawl up and down the 120 ft tall vertical boiler walls. 
+                                    Dished magnetic wheels were created to adhere and align itself to the tubes in focus. The entire crawler
+                                    was developed in house and cost just under $2,000 for total R&D</p>
+                            </div></a>
+                    </div>    
+                    <div class="blogs">
+                        <a href="https://drive.google.com/file/d/1rarkUE_f2UhcwClF42Z5uRYrRQL4c59B/view?usp=sharing">
+                            <div class="img">
+                                <img src="images/portfolio/dracos/dracos_cover_small.png" alt="blog-eight">
+                                <div class="blog-date">AR & Robotics</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>AR Scanning and Mapping</h3>
+                                <p>For my capstone at Drexel University, my team and I developed
+                                    an AR tool to help construction workers easily map, scan, and 
+                                    superimpose building models on a spatially mapped environment. The DRACOS system integrated a HoloLens 1 AR device 
+                                    with a custom DJI F450 drone. The system allowed the user on the job to deploy a drone and interact
+                                    with a 3D model of the physical job site. The HoloLens 1 applictaion allowed the user to import and overlay any 3D models into the application.
+                                </p>
+                            </div></a>
+                    </div>   
+                    <div class="blogs">
+                        <a href="https://drive.google.com/file/d/1svQTxcwqArXjck7zESCHhT93I6uJxzH7/view?usp=sharing">
+                            <div class="img">
+                                <img src="images/portfolio/shadow_arm/robotic_shadow_arm.png" alt="blog-nine">
+                                <div class="blog-date">Robot Control</div>
+                            </div>
+                            <div class="blog-text">
+                                <h3>Continuous Teleoperation</h3>
+                                <p> For Drexel University's MEM 455 Robotics class with Dr. James Tangorra, I developed
+                                    a scaled down 5R robotic manipulator that was tasked to perform a simulated disaster 
+                                    recovery clean-up effort. To control the robot I created a 3D printed shadow arm 
+                                    that was a model of the physical robotic arm. The operator teleoped the real robotic
+                                    arm by using the shadow arm that mapped potentiometer readings at each joint to physical joint
+                                    positions of the real arm to perform the clean-up task.
+                                </p>
+                            </div></a>
+                    </div> 
+                </div>
+                <div class="footer">
+                    <div class="footer-text">
+                        Last Updated June 2022 By Frank Regal 
+                        <span class="footer-image">
+                            Made In America<img src="images/united-states.png" height="24px">
+                        </span> 
+                    </div>
+                </div>
+        </div><!--blog--end-->
+    </body>
+</html>

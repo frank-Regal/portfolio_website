@@ -49,7 +49,7 @@ input[type=number] {
     background: #101010;
     
   }
-  #loader{
+#loader{
       display: flex;
       align-items: center;
       justify-content: center;
@@ -62,7 +62,7 @@ input[type=number] {
       color: whitesmoke;
       font-size: 25px;
       width: 100%;
-  }
+}
 body{
     user-select: none;
     height: auto;

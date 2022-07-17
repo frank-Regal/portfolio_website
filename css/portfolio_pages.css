@@ -26,13 +26,21 @@ body{
 /*
 Laptop
 */
+.page-nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0em;
+    margin:0;
+    padding: 0;
+    border: 0;
+    background-color: #101010;
+    margin-top: 0em;
+}
+
 .page-links{
     display: flex;
     flex-direction: row;
     background-color: #1d1d1d;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 1.35em;
     margin-top: 1.35em;
     border: 0px;
     padding: 0px;
@@ -120,6 +128,15 @@ Laptop
     align-items: center;
 }
 
+#demos{
+    position: relative;
+    top: -3.5em;
+}
+
+#future-work{
+    position: relative;
+    top: -3.5em;
+}
 .section-heading{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -155,7 +172,7 @@ Laptop
     font-family: poppins;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3px;
+    padding-bottom: 0.75em;
 }
 .footer .footer-text{
     

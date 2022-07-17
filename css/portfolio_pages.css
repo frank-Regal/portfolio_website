@@ -6,74 +6,41 @@
 
 body{
     display:flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    user-select: none;
     height: auto;
     overflow-x: hidden;
     overflow-y: visible;
     background: #101010;
     color: white;
-    opacity: 0.9;
     font-family: poppins;
     width: 100%;
     margin: 0px;
     border: 0px;
     padding: 0px;
+    justify-content: center;
+    align-items: center;
 }
-
 
 /* ////////////////////////////////////////////////////////////// */
 /*
 Laptop
 */
-
-.main-container{
-    display: flex;
-    /*background-color: #33ab2f;*/
-    flex-direction: column;
-    margin-top: 90px;
-    width: 65%;
-    align-items: center;
-    
-}
-
-.main-container .title {
-    /*background-color: #13d654;*/
-    margin-top: 20px;
-    font-size: 45px;
-    font-weight: 900;
-    font-family: raleway;
-    letter-spacing: 3px;
-}
-
-.intro {
-    /*background-color: #13d654;*/
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
-
-.intro img{
-    width: 100%;
-    border-radius: 10px;
-}
-
 .page-links{
     display: flex;
     flex-direction: row;
     background-color: #1d1d1d;
-    position: fixed;
-    margin-top: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1.35em;
+    margin-top: 1.35em;
     border: 0px;
     padding: 0px;
-    width: 65%;
+    width: 67em;
+    border-radius: 0.65em;
+    border: 0.1em solid #c9d1cc;
     justify-content: center;
-    border-radius: 10px;
-    border: 1px solid #c9d1cc;
+    align-items: center;
 }
 
 .page-text{
@@ -96,40 +63,62 @@ Laptop
     opacity: 1;
     transform: scale(1.1);
 }
-#overview{
-    margin-bottom: 55px;
+
+.portfolio-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0em;
+    width: 67em;
+    align-items: center;
 
+}
+
+.main-container .title {
+    /*background-color: #13d654;*/
+    margin-top: 1em;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: raleway;
+    letter-spacing: 3px;
+}
+
+.main-container .intro {
+    /*background-color: #13d654;*/
+    margin-top: 0.75em;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.intro img{
+    width: 100%;
+    border-radius: 0.25em;
+}
+
+#about{
+    position: relative;
+    top: -2.5em;
+}
 
 .about-content{
     display: flex;
     flex-direction: column;
-    /*background-color: #0d1117;*/
-    /*background-color: #101010;*/
-    margin-top: 35px;
+    margin-top: 3.5em;
     border: 0px;
     padding: 0px;
-    width: 65%;
+    width: 67em;
     justify-content: center;
-    border-radius: 10px;
-    border: 1px solid #c9d1cc;
+    border-radius: 0.65em;
+    border: 0.1em solid #c9d1cc;
     align-items: center;
 }
-
-.about-content #details{
-    margin-top: 200px;
-    margin-bottom: 55px;
-}
-.about-content #demos{
-    margin-top: 200px;
-    margin-bottom: 55px;
-}
-.about-content #future-work{
-    margin-top: 200px;
-    margin-bottom: 55px;
-}
-
 
 .section-heading{
     margin-top: 10px;
@@ -147,10 +136,45 @@ Laptop
 }
 
 .section-content{
-    margin-top: 20px;
-    margin-bottom: 700px;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: justify;
+    color: #cfcfcf;
 }
 
+.footer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 3.5em;
+    background: #1d1d1d;
+    width: 100%;
+    padding: 13px;
+    color: whitesmoke;
+    font-family: poppins;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+}
+.footer .footer-text{
+    
+    display: inline;
+    font-size: 12px;
+    font-weight: 2;
+    opacity: .8;
+}
+.footer-image{
+    display: flex;
+    flex-direction: row;
+    font-family: poppins;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.footer-image img{
+    padding-left: 6px;
+}
 
 /* ////////////////////////////////////////////////////////////// 
 /*

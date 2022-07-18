@@ -16,23 +16,58 @@
     <!--main css file-->
     <link rel="stylesheet" href="../css/portfolio_pages.css">
     <!--main css file-->
+
+    <!--load java script file--> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <!--<script src="js/gsap.min.js"></script>-->
+    <!--load java script file--> 
 </head>
 <body>
     <a id="overview"></a>
-
-    <!--NAVIGATION BAR-->
+    <!--PAGE NAVIGATION-->
     <div class="page-nav">
-    <div class="page-links">
-        <a href="#overview" class="page-text">Overview</a>
-        <a href="#about" class="page-text">About</a>
-        <a href="#demos" class="page-text">Demos</a>
-        <a href="#future-work" class="page-text">Future Work</a>
-        <a href="https://github.com/UTNuclearRobotics/Augmented-Robot-Environment" class="page-text">GitHub</a>
-        <a href="https://github.com/UTNuclearRoboticsPublic/RobofleetUnrealClient" class="page-text">UE4 Plugin</a>
+        <div id="navigation-bar">
+            <!--POP DOWN NAV MENU-->
+            <!--<img src="../images/fr_logo_2.png" alt="logo">-->
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+            <!--POP DOWN NAV MENU-->
+            <!--CURRENT PAGE LINKS-->
+            <div class="page-links">
+                <a href="#overview" class="page-text">Overview</a>
+                <a href="#about-local" class="page-text">About</a>
+                <a href="#demos" class="page-text">Demos</a>
+                <a href="#future-work" class="page-text">Future Work</a>
+                <a href="https://github.com/UTNuclearRobotics/Augmented-Robot-Environment" class="page-text">GitHub</a>
+                <a href="https://github.com/UTNuclearRoboticsPublic/RobofleetUnrealClient" class="page-text">UE4 Plugin</a>  
+            </div>
+            <!--CURRENT PAGE LINKS-->
+        </div>
+        <!--POP DOWN MENU-->
+        <div id="navigation-content">
+            <!--
+            <div class="logo">
+                <img src="../images/fr_logo_2.png" alt="logo">
+            </div>
+            -->
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <div class="navigation-links">
+                <a href="../index.html" data-text="" id="home-link" >HOME</a>
+                <a href="../index.html" data-text="" id="about-link" >ABOUT</a>
+                <a href="../index.html" data-text="" id="blog-link" >PORTFOLIO</a>
+                <a href="#" data-text="" id="portfolio-link" ></a>
+                <a href="#" data-text="" id="contact-link" ></a>
+            </div>
+        </div>
+        <!--POP DOWN MENU-->
     </div>
-    </div>
-    <!--NAVIGATION BAR-->
-
+    <!--PAGE NAVIGATION-->
     <!--PAGE CONTENT-->
     <div class="portfolio-content">
         <div class="main-container">
@@ -45,7 +80,7 @@
             </div>
             
         </div>
-        <a id="about"></a>
+        <a id="about-local"></a>
         <div class="about-content">
             
             <div class="section-heading">
@@ -132,16 +167,18 @@
     <!--FOOTER-->
     <div class="footer">
         <div class="footer-text">
-            Last Updated June 2022 By Frank Regal 
+            Last Updated July 2022 By Frank Regal 
             <span class="footer-image">
                 Made In America<img src="../images/united-states.png" height="24px">
             </span> 
         </div>
     </div>
     <!--FOOTER-->
-
-    
-
-    
+    <!--SCRIPTS-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="../js/index.js"></script>
+    <!--SCRIPTS-->
 </body>
 </html>

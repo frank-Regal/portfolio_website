@@ -450,7 +450,7 @@ body{
     display: flex;
     flex-direction:column;
     align-items: center;
-    color: whitesmoke;
+    color: #cfcfcf;
     justify-content: center;
     height: auto;
     width: 100%;
@@ -464,7 +464,7 @@ body{
     align-items: center;
     font-size: 45px;
     font-family: raleway;
-    color: whitesmoke;
+    color: #cfcfcf;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 50px;
@@ -474,7 +474,7 @@ body{
 
 
 .about-first-paragraph{
-    color: whitesmoke;
+    color: #cfcfcf;
     justify-content: center;
     font-size: 20px;
     font-family: poppins;
@@ -541,7 +541,7 @@ body{
     background: transparent;
     border:none;
     padding: 15px 30px;
-    color: whitesmoke;
+    color: #cfcfcf;
     background: #bf5700;
     outline: none;
     font-size:20px;
@@ -570,7 +570,7 @@ body{
     justify-content: center;
     font-size: 45px;
     font-family: raleway;
-    color: whitesmoke;
+    color: #cfcfcf;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -584,7 +584,7 @@ body{
     flex-direction:column ;
 }
 .colors{
-    color: whitesmoke;
+    color: #cfcfcf;
 }
 .services-content{
     height: auto;
@@ -659,7 +659,7 @@ body{
     justify-content: center;
     font-size: 45px;
     font-family: raleway;
-    color: whitesmoke;
+    color: #cfcfcf;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -791,7 +791,7 @@ body{
     font-size: 45px;
     font-family: raleway;
     transition: all .4s ease;
-    color: whitesmoke;
+    color: #cfcfcf;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 60px;
@@ -805,7 +805,7 @@ body{
     font-family: raleway;
     padding: 8px;
     padding-top: 15px;
-    color: whitesmoke;
+    color: #cfcfcf;
     font-weight: 400;
 }
 .portfolio{
@@ -991,7 +991,8 @@ padding-bottom: 40px;
     justify-content: center;
     font-size: 45px;
     font-family: raleway;
-    color: whitesmoke;
+    color: #cfcfcf;
+    letter-spacing: 3px;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 60px;
@@ -1061,7 +1062,7 @@ padding-bottom: 40px;
     left: 0;
     bottom: 0;
     background: #bf5700;
-    color: whitesmoke;
+    color: #cfcfcf;
     font-size: 13px;
     text-align: center;
     font-weight: 400;
@@ -1082,7 +1083,7 @@ padding-bottom: 40px;
   text-align: center;
   vertical-align: center;
   font-family: poppins;
-  color: whitesmoke;
+  color: #cfcfcf;
   background-color: #333f48;
   transition: all .5s ease;
 }
@@ -1110,7 +1111,7 @@ padding-bottom: 40px;
 }
 .blogs a{
     text-decoration: none;
-    color: whitesmoke;
+    color: #cfcfcf;
 }
 #contact{
     display: none;
@@ -1128,7 +1129,7 @@ padding-bottom: 40px;
     justify-content: center;
     font-size: 45px;
     font-family: raleway;
-    color: whitesmoke;
+    color: #cfcfcf;
     padding:10px;
     padding-bottom: 30px;
     padding-top: 60px;
@@ -1136,7 +1137,7 @@ padding-bottom: 40px;
 }
 .contact-header-caption{
     padding: 10px;
-    color: whitesmoke;
+    color: #cfcfcf;
     opacity: .9;
     font-family:raleway;
     font-size: 18px;
@@ -1203,7 +1204,7 @@ form{
     outline: none;
     background: #050505;
     border:none;
-    color: whitesmoke;
+    color: #cfcfcf;
     font-family: poppins;
     font-size: 18px;
 }
@@ -1211,7 +1212,7 @@ form{
     font-size: 24px;
     font-family: poppins;
     font-weight: 400;
-    color: whitesmoke;
+    color: #cfcfcf;
     padding: 28px;
 }
 .input-subject{
@@ -1222,7 +1223,7 @@ form{
     outline: none;
     background: #050505;
     border:none;
-    color: whitesmoke;
+    color: #cfcfcf;
     font-family: poppins;
     font-size: 18px;
 }
@@ -1235,7 +1236,7 @@ form{
     outline: none;
     background: #050505;
     border:none;
-    color: whitesmoke;
+    color: #cfcfcf;
     font-family: poppins;
     font-size: 18px;
 }
@@ -1243,7 +1244,7 @@ form button{
     padding:8px 24px;
     font-family: poppins;
     font-size:20px;
-    color: whitesmoke;
+    color: #cfcfcf;
     background:#BB0035;
     opacity: .8;
     margin: 20px;
@@ -1261,7 +1262,7 @@ form button:hover{
     font-size: 24px;
     font-family: poppins;
     font-weight: 400;
-    color: whitesmoke;
+    color: #cfcfcf;
     padding: 30px;
 }
 .contect-info-content-line{
@@ -1276,7 +1277,7 @@ form button:hover{
     margin-left: 100px;
 }
 .contact-info-icon-text{
-    color: whitesmoke;
+    color: #cfcfcf;
     padding:15px;
     font-family: poppins;
 }
@@ -1294,7 +1295,7 @@ form button:hover{
 }
 
 .footer{
-    background: #2b2b2b;
+    background: #1d1d1d;
     width: 100%;
     padding: 13px;
     color: whitesmoke;
@@ -1303,7 +1304,7 @@ form button:hover{
     font-family: poppins;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3px;
+    padding-bottom: 0.75em;
     
 }
 .footer .footer-text{
@@ -1548,24 +1549,25 @@ Mobile Phone
         display: flex;
         flex-direction:column;
         align-items: center;
-        color: whitesmoke;
         justify-content: center;
         height: auto;
         width: 100%;
         padding:30px;
+        color: #cfcfcf;
+        
     }
-    /*
+    
     .about-header{
-        color: whitesmoke;
         justify-content: center;
         font-size: 35px;
         font-family: raleway;
         padding:10px;
         font-weight: 900;
+        color: #cfcfcf;
     }
-    */
+    
     .about-first-paragraph{
-        color: whitesmoke;
+        color: #cfcfcf;
         justify-content: center;
         font-size: 20px;
         font-family: poppins;
@@ -1732,7 +1734,7 @@ Mobile Phone
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                color: whitesmoke;
+                color: #cfcfcf;
                 font-size: 13px;
                 text-align: center;
                 font-weight: 400;
@@ -1752,7 +1754,7 @@ Mobile Phone
               text-align: center;
               vertical-align: center;
               font-family: poppins;
-              color: whitesmoke;
+              color: #cfcfcf;
               background-color: #333f48;
               transition: all .5s ease;
             }
@@ -1840,7 +1842,7 @@ Mobile Phone
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: #cfcfcf;
                 font-family: poppins;
                 font-size: 16px;
             }
@@ -1848,7 +1850,7 @@ Mobile Phone
                 font-size: 22px;
                 font-family: poppins;
                 font-weight: 400;
-                color: whitesmoke;
+                color: #cfcfcf;
                 padding: 20px;
                 padding-top: 0px;
             }
@@ -1860,7 +1862,7 @@ Mobile Phone
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: #cfcfcf;
                 font-family: poppins;
                 font-size: 16px;
             }
@@ -1873,7 +1875,7 @@ Mobile Phone
                 outline: none;
                 background: #050505;
                 border:none;
-                color: whitesmoke;
+                color: #cfcfcf;
                 font-family: poppins;
                 font-size: 16px;
             }
@@ -1881,7 +1883,7 @@ Mobile Phone
                 padding:8px 24px;
                 font-family: poppins;
                 font-size:20px;
-                color: whitesmoke;
+                color: #cfcfcf;
                 opacity: .8;
                 margin: 20px;
                 cursor: pointer;
@@ -1898,7 +1900,7 @@ Mobile Phone
                 font-size: 24px;
                 font-family: poppins;
                 font-weight: 400;
-                color: whitesmoke;
+                color: #cfcfcf;
                 padding: 20px;
             }
             .contect-info-content-line{
@@ -1913,7 +1915,7 @@ Mobile Phone
                 margin-left: 5%;
             }
             .contact-info-icon-text{
-                color: whitesmoke;
+                color: #cfcfcf;
                 padding:15px;
                 font-family: poppins;
             }
@@ -2028,24 +2030,24 @@ Tablets
         display: flex;
         flex-direction:column;
         align-items: center;
-        color: whitesmoke;
+        color: #cfcfcf;
         justify-content: center;
         height: auto;
         width: 100%;
         padding:10px;
     }
-    /*
+    
     .about-header{
-        color: whitesmoke;
+        color: #cfcfcf;
         justify-content: center;
         font-size: 45px;
         font-family: raleway;
         padding:15px;
         font-weight: 900;
     }
-    */
+    
     .about-first-paragraph{
-        color: whitesmoke;
+        color: #cfcfcf;
         justify-content: center;
         font-size: 40px;
         font-family: poppins;
@@ -2231,7 +2233,7 @@ Tablets
         position: absolute;
         left: 0;
         bottom: 0;
-        color: whitesmoke;
+        color: #cfcfcf;
         font-size: 13px;
         text-align: center;
         font-weight: 400;
@@ -2251,7 +2253,7 @@ Tablets
       text-align: center;
       vertical-align: center;
       font-family: poppins;
-      color: whitesmoke;
+      color: #cfcfcf;
       background-color: #333f48;
       padding: 10px;
       transition: all .5s ease;
@@ -2340,7 +2342,7 @@ Tablets
         outline: none;
         background: #050505;
         border:none;
-        color: whitesmoke;
+        color: #cfcfcf;
         font-family: poppins;
         font-size: 16px;
     }
@@ -2348,7 +2350,7 @@ Tablets
         font-size: 22px;
         font-family: poppins;
         font-weight: 400;
-        color: whitesmoke;
+        color: #cfcfcf;
         padding: 20px;
         padding-top: 0px;
     }
@@ -2360,7 +2362,7 @@ Tablets
         outline: none;
         background: #050505;
         border:none;
-        color: whitesmoke;
+        color: #cfcfcf;
         font-family: poppins;
         font-size: 16px;
     }
@@ -2373,7 +2375,7 @@ Tablets
         outline: none;
         background: #050505;
         border:none;
-        color: whitesmoke;
+        color: #cfcfcf;
         font-family: poppins;
         font-size: 16px;
     }
@@ -2381,7 +2383,7 @@ Tablets
         padding:8px 24px;
         font-family: poppins;
         font-size:20px;
-        color: whitesmoke;
+        color: #cfcfcf;
         opacity: .8;
         margin: 20px;
         cursor: pointer;
@@ -2398,7 +2400,7 @@ Tablets
         font-size: 24px;
         font-family: poppins;
         font-weight: 400;
-        color: whitesmoke;
+        color: #cfcfcf;
         padding: 20px;
     }
     .contect-info-content-line{
@@ -2481,7 +2483,7 @@ Not Sure
     .cv a button{
         border:none;
         padding: 25px 35px;
-        color: whitesmoke;
+        color: #cfcfcf;
         outline: none;
         font-size:30px;
         font-family: raleway;
@@ -2557,7 +2559,7 @@ Not Sure
         position: absolute;
         left: 0;
         bottom: 0;
-        color: whitesmoke;
+        color: #cfcfcf;
         font-size: 13px;
         text-align: center;
         font-weight: 400;
@@ -2577,7 +2579,7 @@ Not Sure
       text-align: center;
       vertical-align: center;
       font-family: poppins;
-      color: whitesmoke;
+      color: #cfcfcf;
       background-color: #333f48;
       transition: all .5s ease;
     }
@@ -2611,7 +2613,7 @@ Not Sure
         justify-content: center;
         font-size: 45px;
         font-family: raleway;
-        color: whitesmoke;
+        color: #cfcfcf;
         padding:10px;
         padding-bottom: 30px;
         padding-top: 60px;
@@ -2619,7 +2621,7 @@ Not Sure
     }
     .contact-header-caption{
         padding: 10px;
-        color: whitesmoke;
+        color: #cfcfcf;
         opacity: .9;
         font-family:raleway;
         font-size: 18px;
@@ -2684,7 +2686,7 @@ Not Sure
         outline: none;
         background: #050505;
         border:none;
-        color: whitesmoke;
+        color: #cfcfcf;
         font-family: poppins;
         font-size: 18px;
     }
@@ -2692,7 +2694,7 @@ Not Sure
         font-size: 24px;
         font-family: poppins;
         font-weight: 400;
-        color: whitesmoke;
+        color: #cfcfcf;
         padding: 20px;
         padding-top: 0px;
     }
@@ -2704,7 +2706,7 @@ Not Sure
         outline: none;
         background: #050505;
         border:none;
-        color: whitesmoke;
+        color: #cfcfcf;
         font-family: poppins;
         font-size: 18px;
     }
@@ -2717,7 +2719,7 @@ Not Sure
         outline: none;
         background: #050505;
         border:none;
-        color: whitesmoke;
+        color: #cfcfcf;
         font-family: poppins;
         font-size: 18px;
     }
@@ -2725,7 +2727,7 @@ Not Sure
         padding:8px 24px;
         font-family: poppins;
         font-size:20px;
-        color: whitesmoke;
+        color: #cfcfcf;
         opacity: .8;
         margin: 20px;
         cursor: pointer;

@@ -12,7 +12,7 @@
     margin: 0%;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
+/*::-webkit-scrollbar{
     width: 4px;
     color:#bf5700;
     transition: all .4s ease;
@@ -27,8 +27,8 @@
     background: #101010; 
     border-radius: 4px;
     width: 4px;
-  }
-  input::-webkit-outer-spin-button,
+  }*/
+input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
@@ -94,7 +94,7 @@ body{
     width: 100%;
     position:fixed;
     z-index: 5;
-    background-color:rgba(2, 2, 2, 0.85);
+    background-color:rgba(2, 2, 2, 0.9);
     transform: translateY(-200%);
     display: flex;
     flex-direction: column;
@@ -115,7 +115,7 @@ body{
     right:4%;
     top: 40%;
     cursor: pointer;
-    opacity: .8;
+    opacity: 0.8;
     transition: all .4s ease;
 }
 .menubar span{

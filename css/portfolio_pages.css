@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400&display=swap');
 
 
 
@@ -13,7 +13,6 @@ body{
     overflow-y: visible;
     background: #101010;
     color: white;
-    font-family: poppins;
     width: 100%;
     margin: 0px;
     border: 0px;
@@ -36,6 +35,7 @@ Laptop
     padding: 0;
     border: 0;
     margin-top: 0em;
+    font-family: poppins;
 }
 
 .page-links{
@@ -249,6 +249,8 @@ Laptop
     display:flex;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
+    font-family: poppins;
 }
 
 .main-container{
@@ -257,7 +259,6 @@ Laptop
     margin-top: 0em;
     width: 62em;
     align-items: center;
-
 }
 
 .main-container .title {
@@ -267,7 +268,7 @@ Laptop
     font-weight: 900;
     font-family: raleway;
     letter-spacing: 3px;
-    color: #cfcfcf;
+    color: whitesmoke;
 }
 
 .main-container .intro {
@@ -328,10 +329,32 @@ Laptop
 
 .section-content{
     width: 95%;
-    margin-top: 10px;
+    margin-top: 0;
     margin-bottom: 0px;
-    text-align: justify;
+    text-align:justify;
     color: #cfcfcf;
+    font-family: roboto;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+.section-content a{
+    text-decoration: underline;
+    color: #cfcfcf;
+}
+.section-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.section-content .publication-section-content{
+    font-size: 0.8em;
+    line-height: 1.3em;
+    text-align: justify;
+}
+.list-break{
+    line-height: 0.6em;
 }
 
 /* FOOTER */
@@ -389,5 +412,104 @@ Tablets
 Mobile Phone
 */
 @media only screen and (max-width: 550px){
+
+    .page-links{
+        visibility: hidden;
+    }
+
+    /* PAGE CONTENT */
+.portfolio-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0em;
+    width: 40%;
+    align-items: center;
+
+}
+
+.main-container .title {
+    /*background-color: #13d654;*/
+    margin-top: 4em;
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: raleway;
+    letter-spacing: 3px;
+    color: #cfcfcf;
+}
+
+.main-container .intro {
+    /*background-color: #13d654;*/
+    margin-top: 0.75em;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.intro img{
+    width: 100%;
+    border-radius: 0.25em;
+    text-align: center;
+}
+
+#about-local{
+    position: relative;
+    top: -2.5em;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5em;
+    border: 0px;
+    padding: 0px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+#demos{
+    position: relative;
+    top: -3.5em;
+}
+
+#future-work{
+    position: relative;
+    top: -3.5em;
+}
+
+#publications{
+    position: relative;
+    top: -3.5em;
+}
+.section-heading{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    width: 95%;
+    color: #bf5700;
+}
+
+.section-break{
+    width:100%;
+    height: 1px;
+    line-break: auto;
+    background-color: #c9d1cc;
+}
+
+.section-content{
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: justify;
+    color: #cfcfcf;
+}
+
 
 }

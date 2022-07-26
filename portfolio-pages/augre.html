@@ -40,7 +40,7 @@
                 <a href="#overview" class="page-text">Overview</a>
                 <a href="#about-local" class="page-text">About</a>
                 <a href="#demos" class="page-text">Demos</a>
-                <a href="#future-work" class="page-text">Future Work</a>
+                <a href="#publications" class="page-text">Publications</a>
                 <a href="https://github.com/UTNuclearRobotics/Augmented-Robot-Environment" class="page-text">GitHub</a>
                 <a href="https://github.com/UTNuclearRoboticsPublic/RobofleetUnrealClient" class="page-text">UE4 Plugin</a>  
             </div>
@@ -59,8 +59,8 @@
             </div>
             <div class="navigation-links">
                 <a href="../index.html" data-text="" id="home-link" >HOME</a>
-                <a href="../index.html" data-text="" id="about-link" >ABOUT</a>
-                <a href="../index.html" data-text="" id="blog-link" >PORTFOLIO</a>
+                <a href="../about.html" data-text="" id="about-link" >ABOUT</a>
+                <a href="../portfolio.html" data-text="" id="blog-link" >PORTFOLIO</a>
                 <a href="#" data-text="" id="portfolio-link" ></a>
                 <a href="#" data-text="" id="contact-link" ></a>
             </div>
@@ -70,6 +70,7 @@
     <!--PAGE NAVIGATION-->
     <!--PAGE CONTENT-->
     <div class="portfolio-content">
+        <!--overview-->
         <div class="main-container">
             <div class="title">
                 AugRE: Augmented Robot Environment
@@ -78,19 +79,25 @@
             <div class="intro">
                 <img src="../images/gif/augre.gif">
             </div>
-            
         </div>
+        <!--overview-->
+        <!--page write up-->
         <a id="about-local"></a>
         <div class="about-content">
-            
             <div class="section-heading">
                 About
             </div>
             <div class="section-content">
-                My team and I in the Nuclear and Applied Robotics group 
-                created an augemented reality base human-robot teaming system 
+                My team and I in the <i><a href="https://robotics.me.utexas.edu/">Nuclear and Applied Robotics Group</a></i>
+                created an augmented reality base human-robot teaming system 
                 called AugRE. The application allows users to supervise and command 
-                robotic teammates. This work has recently been accepted for publication 
+                robotic teammates. AugRE allows for HoloLens 2 users to localize with
+                a team of heterogenous robotics. Users are able to visualize the location of both
+                robot and HoloLens' users in the physical world with virtual AR labels that track all agents throughout space. The framework
+                allows for operators of the robotic team to receive various types of ROS messages that 
+                can be interperted and displayed in the users view. This project was built as a baseline
+                for further research and development.
+                This work has recently been accepted for publication 
                 in the 31st IEEE International Conference on Robot & Human Interactive 
                 Communication conference (Ro-MAN 2022).
             </div>
@@ -99,12 +106,23 @@
                 Details
             </div>
             <div class="section-content">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
-                Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
-                Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-            </div>
-
+                <br>
+                <img src="../images/portfolio/augre/augre_overview.png">
+                <br>
+                The AugRE framework is composed of many components. The main component and the largest contribution of the 
+                project is the development of the HoloLens 2 application. The augmented reality application was built using
+                Unreal Engine 4 and consisted of three main components: 1) an Unreal Engine plugin called RobofleetUnrealClient,
+                2) a library of ROS message structs that can be interperted by Unreal Engine, 3) the Microsoft Mixed Reality Toolkit.
+                <br>
+                <i><a href="https://github.com/UTNuclearRoboticsPublic/RobofleetUnrealClient">Robofleet Unreal Client</a></i> is a modified 
+                <i><a href="https://github.com/ut-amrl/robofleet_client/tree/97ed087e9d86c94acd0370614fd16fa49f65821d">Robofleet Client</a></i> used to communicate seamlessly with large teams of 
+                robotic agents and other HoloLens users. Robofleet is a communication method developed recently for a scalable lightweight method of 
+                communicating with a large team of heterogenous team of robotic agents.
+                From the image above, you can see that the HoloLens 2 users have the AugRE application downloaded to them. All the
+                robotic agents in the AugRE team have a standard Robofleet Client installed on their system as well. With all the necessary
+                software installed, all agents search for Azure spatial anchors, publish, and subscribe constantly to basic location and 
+                status messages across a Robofleet server for all agents to visualize and localize to each other.
+                </div>
             <a id="demos"></a>
             <br>
             <div class="section-heading">
@@ -118,8 +136,6 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe> 
             </div>
-
-            <a id="future-work"></a>
             <br>
             <div class="section-heading">
                 Future Work
@@ -127,10 +143,39 @@
             <div class="section-content">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
             </div>
+            <a id="publications"></a>
+            <br>
+            <div class="section-heading">
+                Publications & Presentations
+            </div>
+            <div class="section-content">
+                <div class="publication-section-content">
+                    <ol>
+                        <li> <strong>Regal, F</strong>, Petlowany, C, Pehlivanturk, C, Van Sice, C., Suarez, C., Anderson, R., and Pryor, M., 
+                            <i>"AugRE:Augmented Robot Environment to Facilitate Human-Robot Teaming and Communication"</i>, 31st IEEE Annual
+                            Conference on Robot and Human Interactive Communication (RO-MAN), Naples, Italy, August 2022.
+                        </li>
+                        <div class="list-break"><br></div>
+                        <li> <strong>Regal, F</strong> and Petlowany, C, <i>“AugRE: Augmented Robot Environment"</i>, Sandia National Laboratory 4th
+                            Annual XR Conference, Virtual, July 2022.
+                        </li>
+                        <div class="list-break"><br></div>
+                        <li><strong>Regal, F</strong> and Petlowany, C, (Poster Presentation) <i>“AugRE: An Augmented Reality Tool for Supervising,
+                            Coordinating, and Commanding Robotic Agents"</i>, Texas Regional Robotics Symposium (TEROS), Austin,
+                            TX, April 2022
+                        </li>
+                        <div class="list-break"><br></div>
+                        <li> <strong>Regal, F</strong> and Petlowany, C, <i></i>“An Augmented Reality Tool for Supervising, Coordinating, and
+                            Commanding Robotic Agents"</i>, Texas Immersive Institute (TXI) Research Lightning Talk, Austin, TX,
+                            February 2022.
+                        </li>
+                    </ol>
+                </div>
+            </div>
             <br>
             <br>
         </div>
-        
+        <!--page write up-->
     </div>
     <!--PAGE CONTENT-->
     <!--FOOTER-->

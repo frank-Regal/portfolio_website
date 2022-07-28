@@ -12,6 +12,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    
 }
 
 input::-webkit-outer-spin-button,
@@ -438,29 +439,63 @@ body{
     align-items: center;
     color: #cfcfcf;
     justify-content: center;
-    height: auto;
+    height: 100vh;
     width: 100%;
-    padding: 30px;
+    padding-top: 80px;
     text-align: center;
-
+    /*background-color: #BB0035;*/
 }
 .about-header{
     height: auto;
-    width: 100%;
+    width: 400px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 45px;
-    font-family: raleway;
+    font-size: 40px;
+    font-family: roboto;
     color: #cfcfcf;
-    padding:10px;
-    padding-bottom: 10vh;
-    padding-top: 50px;
-    font-weight: 900;
-    letter-spacing: 3px;
+    padding:0px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    /*background-color: #04A777;*/
+    border-bottom: 2px solid #bf5700;
+    border-top: 2px solid #bf5700;
+    border-radius: 17px;
 }
 
+.bottom-header{
+    width: 400px;
+    padding-top: 6;
+    padding-bottom: 12;
+    border-top: 0px solid #bf5700;
+    border-radius: 0;
+    border-bottom: 0px solid #bf5700;
+    font-size: 60px;
+}
 
+.about-bio{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    font-family: roboto;
+    color: #cfcfcf;
+    align-items:center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 80px;
+    padding-top: 30px;
+    background-color: #1d1d1d;
+}
+.about-bio-text{
+    width: 50vw;
+    font-size: 18px;
+    font-family: roboto;
+}
 .about-first-paragraph{
     color: #cfcfcf;
     justify-content: center;
@@ -579,7 +614,8 @@ body{
 }
 #services{
     position: relative;
-    padding-top: 10vh;
+    padding-top: 0;
+    background-color: #101010;
 }
 
 .services-heading{
@@ -589,13 +625,14 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 45px;
-    font-family: raleway;
+    font-family: roboto;
     color: #cfcfcf;
-    padding:10px;
+    padding:0px;
     padding-bottom: 30px;
-    padding-top: 30px;
-    font-weight: 900;
-
+    padding-top: 50px;
+    font-weight: 500;
+    /*background-color: #BB0035;*/
+    letter-spacing: 2px;
 }
 .about-first-paragraph {
     display: flex;
@@ -1587,7 +1624,6 @@ Mobile Phone
         padding:30px;
         color: #cfcfcf;
         text-align: center;
-        
     }
     
     .about-header{
@@ -2596,17 +2632,17 @@ Not Sure
     }
     .about-main{
         display: flex;
-        align-items:flex-start;
+        align-items:center;
         justify-content: center;
-        width: 75vw;
-        height: auto;
+        width: 80vw;
+        height: 100%;
         flex-direction: row;
         /*background-color: #035aa6;*/
     }
     .about-img img{
         padding: 0px;
         margin: 0px;
-        height: 45vh;
+        height: 50vh;
         width: 100%;
         animation: opacity 1.4s ease ;
         border-radius: 1em;
@@ -2724,12 +2760,16 @@ Not Sure
 
     .card{
         width: 20vw;
-        margin-top: -10px;
+        margin-top: -20px;
         font-family: roboto;
-        
+        border: 10px solid whitesmoke;
+        border-radius: 1em;
+        background-color: whitesmoke;
     }
     .card img{
-        width: 20vw;
+        width: 100%;
+        border: 1px;
+        border-radius: 1em;
     }
     .card-body{
         background-color: whitesmoke;
@@ -2741,6 +2781,7 @@ Not Sure
         padding-left: 7px;
         font-weight: 600;
         font-size: 17px;
+        letter-spacing: 1px;
     }
 
     .text-muted{
@@ -2774,6 +2815,7 @@ Not Sure
     
     /* Place the container to the right */
     .right-2 {
+    margin-top: -200px;
     padding: 0px 0px 0px 70px;
     left: 50%;
     }

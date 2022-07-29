@@ -564,33 +564,102 @@ body{
     color: #bf5700;
     transition: all .4s ease;
 }
+.about-main{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 80vw;
+    height: 100%;
+    flex-direction: row;
+    /*background-color: #035aa6;*/
+}
+.about-img img{
+    padding: 0px;
+    margin: 0px;
+    height: 50vh;
+    width: 100%;
+    animation: opacity 1.4s ease ;
+    border-radius: 1em;
+}
+.about-img {
+    height: 45vh;
+    width: 100%;
+    /*background-color: #dd7631;*/
+    padding: 0px;
+    margin: 0px;
+    margin-right: 3em;
+    /*padding: 30px;*/
+}
+.about-side-info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+}
+
+.about-side-info-title{
+    /*background-color:#14a704;*/
+    text-align: left;
+    font-family: roboto;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+.about-side-info-title-paragraph{
+    /*background-color:#a70469;*/
+    font-size: 18px;
+    font-family: roboto;
+    text-align: left;
+    font-weight: 300;
+    line-height: 1.5;
+}
 
 .about-top-info {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-        /*margin-top: calc(-1 * var(--bs-gutter-y));
-        margin-right: calc(-.5 * var(--bs-gutter-x));
-        /*margin-left: calc(-.5 * var(--bs-gutter-x));*/
-        text-align: left;
-        align-items: left;
-        justify-content: left;
+    /*background-color:#0407a7;*/
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 300;
+}
+.about-top-info-text{
+    font-size: 18px;
+    font-family: roboto;
 }
 
 .about-top-info ul {
     list-style: none;
-    padding: 0;
+    padding-top: 0;
+    padding: 1em;
 }
 
 .about-top-info ul i {
-    font-size: 16px;
-    margin-right: 5px;
+    /*font-size: 20px;*/
     color: #bf5700;
-    font-weight: 1000;
-    line-height: 0;
+    font-weight: 2000;
+    line-height: 2;
+    padding: 0.1em;
 }
 
+
+.cv a button{
+    border:none;
+    padding: 0.4em 5em;
+    color: #cfcfcf;
+    outline: none;
+    font-size:20px;
+    font-family: roboto;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: all .4s ease;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
 *, ::after, ::before {
     box-sizing: border-box;
 }
@@ -606,7 +675,7 @@ body{
     background: #bf5700;
     outline: none;
     font-size:20px;
-    font-family: raleway;
+    font-family: roboto;
     border-radius: 4px;
     cursor: pointer;
     position: relative;
@@ -659,6 +728,9 @@ body{
     text-align: center;
     padding:2.5%;
     background-color: #101010;
+}
+.services-content a{
+    text-decoration: none;
 }
 .service{
     height:380px;
@@ -716,6 +788,133 @@ body{
     font-size: 16px;
     line-height: 1.25;
 }
+
+
+    /*TIMELINE ADD*/
+    /* The actual timeline (the vertical ruler) */
+    .main-timeline-2 {
+        position: relative;
+    }
+    
+    /* The actual timeline (the vertical ruler) */
+    .main-timeline-2::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    }
+    
+    /* Container around content */
+    .timeline-2 {
+    position: relative;
+    /*background-color:#04A777;
+    border: 0.2em solid #BB0035;*/
+    width: 50%;
+    }
+
+    .card{
+        width: 20vw;
+        margin-top: -20px;
+        font-family: roboto;
+        border: 10px solid whitesmoke;
+        border-radius: 1em;
+        background-color: whitesmoke;
+    }
+    .card img{
+        width: 100%;
+        border: 1px;
+        border-radius: 1em;
+    }
+
+    .card:hover img{
+        transform: scale(1.03);
+        transition: all 0.3s ease;
+    };
+    .card-body{
+        background-color: whitesmoke;
+        margin-top: -2px;
+    }
+
+    .fw-bold{
+        padding-top: 7px;
+        padding-left: 7px;
+        font-weight: 600;
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .text-muted{
+        padding-left: 7px;
+        padding-top: 3px;
+        font-size: 14px;
+    }
+    .mb-0{
+        padding: 7px;
+        font-size: 15px;
+    }
+    /* The circles on the timeline */
+    .timeline-2::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 50%;
+    background-color: #bf5700;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    margin-left: -3px;
+    }
+    
+    /* Place the container to the left */
+    .left-2 {
+    padding: 0px 40px 10px 0px;
+    right: -25%;
+    }
+    
+    /* Place the container to the right */
+    .right-2 {
+    margin-top: -200px;
+    padding: 0px 0px 0px 70px;
+    left: 50%;
+    }
+    
+    /* Add arrows to the left container (pointing right) */
+    .left-2::before {
+    content: " ";
+    position: absolute;
+    top: 13px;
+    z-index: 1;
+    left: 44.75%;
+    border: medium solid #bf5700;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent transparent transparent #bf5700;
+    }
+    
+    /* Add arrows to the right container (pointing left) */
+    .right-2::before {
+    content: " ";
+    position: absolute;
+    top: 13px;
+    z-index: 1;
+    left: 3.25%;
+    border: medium solid #bf5700;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #bf5700 transparent transparent;
+    }
+    
+    /* Fix the circle for containers on the right side */
+    .right-2::after {
+        left: -1.5%;
+    }
+    /* Fix the circle for containers on the right side */
+    .left-2::after {
+        left: 48.5%;
+    }
 #skills{
     width: 100%;
     height:auto;
@@ -1640,11 +1839,12 @@ Mobile Phone
     
     .about-header{
         justify-content: center;
-        font-size: 35px;
+        font-size: 25px;
         font-family: raleway;
         padding:10px;
         font-weight: 900;
         color: #cfcfcf;
+        width: 40vw;
     }
     
     .about-first-paragraph{
@@ -1653,7 +1853,7 @@ Mobile Phone
         font-size: 20px;
         font-family: poppins;
         width: 95%;
-        padding: 10px;
+        padding: 0px;
         font-weight: 400;
     }
     .about-first-paragraph .color{
@@ -1675,102 +1875,188 @@ Mobile Phone
         font-weight: 200;
         font-family: poppins;
     }
+
     .about-main{
         display: flex;
-        align-items: center;
+        align-items:center;
         justify-content: center;
         width: 100vw;
         height: auto;
+        flex-direction: column;
         padding-left: 10px;
         padding-right: 10px;
-        flex-direction: column;
+        padding-top: 40px;
+        /*background-color: #035aa6;*/
     }
     .about-img img{
-        width: 100%;
-        height: 300px;
-        padding: 5px;
-        border-radius: 0em;
-        margin-bottom: 2.25em;
+        padding: 0px;
+        margin: 0px;
+        height: 40vh;
+        width: 80%;
+        border-radius: 1em;
     }
     .about-img {
+        height: 45vh;
         width: 100%;
-        height: 300px;
-        margin-bottom: 2em;
+        /*background-color: #dd7631;*/
+        padding: 0px;
+        margin: 0px;
+        margin-right: 0;
+        padding-top: 0px;
+        /*padding: 30px;*/
         text-align: center;
         overflow: hidden;
     }
-
+    .about-side-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-side-info-title{
+        /*background-color:#14a704;*/
+        text-align: left;
+        font-family: roboto;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        font-weight: 400;
+        margin-bottom: 0.5em;
+    }
+    .about-side-info-title-paragraph{
+        /*background-color:#a70469;*/
+        font-size: 16px;
+        font-family: roboto;
+        text-align: center;
+        font-weight: 300;
+        line-height: 1.5;
+        width: 90vw;
+    }
+    
     .about-top-info {
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;
         display: flex;
         flex-wrap: wrap;
-        background-color:#04A777;
-        /*margin-top: calc(-1 * var(--bs-gutter-y));
-        margin-right: calc(-.5 * var(--bs-gutter-x));
-        /*margin-left: calc(-.5 * var(--bs-gutter-x));*/
-        text-align: left;
-        align-items: left;
-        justify-content: left;
+        /*background-color:#0407a7;*/
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        padding-top: 0;
+        font-weight: 300;
     }
-
+    .about-top-info-text{
+        font-size: 16px;
+        font-family: roboto;
+    }
+    
     .about-top-info ul {
         list-style: none;
-        padding: 0;
+        padding-top: 0;
+        padding: 1em;
     }
-
+    
     .about-top-info ul i {
-        font-size: 16px;
-        margin-right: 5px;
+        /*font-size: 20px;*/
         color: #bf5700;
-        font-weight: 1000;
-        line-height: 0;
+        font-weight: 2000;
+        line-height: 2;
+        padding: 0.1em;
     }
     
     *, ::after, ::before {
         box-sizing: border-box;
     }
+    .about-bio{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: auto;
+        font-family: roboto;
+        color: #cfcfcf;
+        align-items:center;
+        align-content: center;
+        justify-content: flex-start;
+        justify-items: center;
+        padding-bottom: 80px;
+        padding-top: 0px;
+        background-color: #1d1d1d;
+    }
+    .about-bio-text{
+        width: 80vw;
+        font-size: 16px;
+        font-family: roboto;
+        text-align: justify;
+        line-height: 1.2;
+        font-weight: 300;
+    }
+    .about-bio-text a{
+        text-decoration: underline;
+        color:#bf5700;
+    }
+    .bottom-header{
+        display: none;
+    }
+    
 
     /* Media queries - Responsive timeline on screens less than 600px wide */
     
         /* Place the timelime to the left */
         .main-timeline-2::after {
-        left: 31px;
+            display: none;
         }
-        
+
         /* Full-width containers */
         .timeline-2 {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            left: 40px;
         }
-        
+
+        .timeline-2::after {
+            display: none;
+        }
+    
         /* Make sure that all arrows are pointing leftwards */
         .timeline-2::before {
-        left: 60px;
+        left: 0px;
         border: medium solid white;
         border-width: 10px 10px 10px 0;
         border-color: transparent white transparent transparent;
+        }
+
+        .card{
+            width: 80vw;
+            margin-top: 40px;
         }
         
         /* Make sure all circles are at the same spot */
         .left-2::after,
         .right-2::after {
-        left: 18px;
+            left: 0px;
         }
-        
+
         .left-2::before {
-        right: auto;
+            display: none;
+        }
+        .right-2::before{
+            display: none;
         }
         
+        .left-2{
+            padding: 0px 0px 0px 0px;
+        }
         /* Make all right containers behave like the left ones */
         .right-2 {
-        left: 0%;
+            left: 40px;
+            margin-top: 0px;
+            padding: 0px 0px 0px 0px;
         }
         
 
     .service{
-        height:320px;
+        height:400px;
         width:90%;
         margin: 1.5%;
         background-color: #191919;
@@ -1782,16 +2068,52 @@ Mobile Phone
         border-radius: 10px;
         overflow: hidden;
     }
+    .services-heading{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+    .services-content{
+        padding-bottom: 40px;
+    }
+    
     .service-img img{
         display: inline-block;
         z-index: 2;
         position: relative;
         margin: 20px;
-        border-radius: 30%;
+        border-radius: 10px;
         padding: 10px;
-        height:80px;
+        width: 70vw;
+        height: auto;
         transition: all .8s ease;
     }
+
+    .print img{
+        height: 35vh;
+        width: auto;
+    }
+    .service-description h2{
+        padding: 10px;
+        margin: 5px;
+        font-weight: 400;
+        font-size: 28px;
+        font-family: roboto;
+    }
+    .service-description p{
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 200px;
+        font-weight: 300;
+        font-size: 15px;
+        color:#cfcfcf;
+        font-family: roboto;
+    }
+    .career-timeline-heading{
+        padding-bottom: 0px;
+        padding-top: 60px;
+    }
+    
     .skill{
         width:80%;
     }
@@ -2761,7 +3083,6 @@ Not Sure
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-
     }
     
     /* Container around content */

@@ -7,9 +7,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
-    padding: 0%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap');
+
+*{padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     
@@ -485,16 +485,23 @@ body{
     color: #cfcfcf;
     align-items:center;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     justify-items: center;
     padding-bottom: 80px;
-    padding-top: 30px;
+    padding-top: 0px;
     background-color: #1d1d1d;
 }
 .about-bio-text{
-    width: 50vw;
+    width: 55vw;
     font-size: 18px;
     font-family: roboto;
+    text-align: justify;
+    line-height: 1.2;
+    font-weight: 300;
+}
+.about-bio-text a{
+    text-decoration: underline;
+    color:#bf5700;
 }
 .about-first-paragraph{
     color: #cfcfcf;
@@ -615,7 +622,9 @@ body{
 #services{
     position: relative;
     padding-top: 0;
-    background-color: #101010;
+    background-color: #1d1d1d;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #101010;
 }
 
 .services-heading{
@@ -628,8 +637,8 @@ body{
     font-family: roboto;
     color: #cfcfcf;
     padding:0px;
-    padding-bottom: 30px;
-    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     font-weight: 500;
     /*background-color: #BB0035;*/
     letter-spacing: 2px;
@@ -649,6 +658,7 @@ body{
     overflow: hidden;
     text-align: center;
     padding:2.5%;
+    background-color: #101010;
 }
 .service{
     height:380px;
@@ -674,7 +684,7 @@ body{
     z-index: 2;
     position: relative;
     margin: 20px;
-    border-radius: 30%;
+    border-radius: 10px;
     padding: 10px;
     border: 0px solid #bf5700;
     background: #bf5700;
@@ -697,12 +707,14 @@ body{
     margin: 5px;
     font-weight: 200;
     font-size: 25px;
+    letter-spacing: 1.5px;
 }
 .service-description p{
-    padding: 10px;
+    padding: 20px;
+    padding-top: 10px;
     font-weight: 200;
     font-size: 16px;
-    opacity: .8;
+    line-height: 1.25;
 }
 #skills{
     width: 100%;
@@ -2313,10 +2325,11 @@ Tablets
         font-size: 22px;
     }
     .service-description p{
-        padding: 10px;
+        padding: 20px;
+        padding-top: 10px;
         font-weight: 200;
         font-size: 15px;
-        opacity: .8;
+        color:#cfcfcf;
     }
     .skill{
         width:40%;
@@ -2669,7 +2682,7 @@ Not Sure
         font-family: roboto;
         font-size: 40px;
         letter-spacing: 0.05em;
-        font-weight: 0;
+        font-weight: 400;
         margin-bottom: 0.5em;
     }
     .about-side-info-title-paragraph{
@@ -2677,7 +2690,7 @@ Not Sure
         font-size: 18px;
         font-family: roboto;
         text-align: left;
-        font-weight: 0;
+        font-weight: 300;
         line-height: 1.5;
     }
 
@@ -2690,6 +2703,7 @@ Not Sure
         justify-content: left;
         margin-top: 0;
         padding-top: 0;
+        font-weight: 300;
     }
     .about-top-info-text{
         font-size: 18px;
@@ -2771,6 +2785,11 @@ Not Sure
         border: 1px;
         border-radius: 1em;
     }
+
+    .card:hover img{
+        transform: scale(1.03);
+        transition: all 0.3s ease;
+    };
     .card-body{
         background-color: whitesmoke;
         margin-top: -2px;
@@ -2880,23 +2899,29 @@ Not Sure
         display: inline-block;
         z-index: 2;
         position: relative;
-        margin: 20px;
-        border-radius: 30%;
+        margin: 5px;
+        border-radius: 10px;
         padding: 10px;
-        height:120px;
+        height:200px;
+        width: auto;
         transition: all .8s ease;
     }
     .service-description h2{
         padding: 10px;
         margin: 5px;
-        font-weight: 200;
+        font-weight: 400;
+        font-family: roboto;
         font-size: 32px;
+        color: #cfcfcf;
     }
     .service-description p{
-        padding: 10px;
-        font-weight: 200;
+        padding: 20px;
+        padding-top: 10px;
+        font-weight: 300;
         font-size: 18px;
-        opacity: .8;
+        opacity: 1;
+        font-family: roboto;
+        color: #cfcfcf;
     }
     .blogs{
         height: 470px;

@@ -568,7 +568,7 @@ body{
     display: flex;
     align-items:center;
     justify-content: center;
-    width: 80vw;
+    width: 100vw;
     height: 100%;
     flex-direction: row;
     /*background-color: #035aa6;*/
@@ -576,10 +576,13 @@ body{
 .about-img img{
     padding: 0px;
     margin: 0px;
-    height: 50vh;
+    height: auto;
     width: 100%;
     animation: opacity 1.4s ease ;
     border-radius: 1em;
+    max-width: 531px;
+    max-height: 425px;
+    
 }
 .about-img {
     height: 45vh;
@@ -589,6 +592,7 @@ body{
     margin: 0px;
     margin-right: 3em;
     /*padding: 30px;*/
+    padding-top: 10px;
 }
 .about-side-info{
     display: flex;
@@ -755,13 +759,15 @@ body{
     display: inline-block;
     z-index: 2;
     position: relative;
-    margin: 20px;
+    margin: 5px;
+    margin-top: 17px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 4px;
     border: 0px solid #bf5700;
     background: #bf5700;
     box-shadow:0px 0px 0px 0px #bf5700 ;
-    height:100px;
+    height:175px;
+    max-width: 90%;
     transition: all .8s ease;
 }
 .service:hover .service-img img{
@@ -777,18 +783,22 @@ body{
 .service-description h2{
     padding: 10px;
     margin: 5px;
-    font-weight: 200;
+    font-weight: 400;
+    font-family: roboto;
     font-size: 25px;
+    color: #cfcfcf;
     letter-spacing: 1.5px;
 }
 .service-description p{
     padding: 20px;
-    padding-top: 10px;
-    font-weight: 200;
+    padding-top: 0px;
+    font-weight: 300;
     font-size: 16px;
     line-height: 1.25;
+    opacity: 1;
+    font-family: roboto;
+    color: #cfcfcf;
 }
-
 
     /*TIMELINE ADD*/
     /* The actual timeline (the vertical ruler) */
@@ -813,11 +823,11 @@ body{
     position: relative;
     /*background-color:#04A777;
     border: 0.2em solid #BB0035;*/
-    width: 50%;
+    width: 60%;
     }
 
     .card{
-        width: 20vw;
+        width: 50%;
         margin-top: -20px;
         font-family: roboto;
         border: 10px solid whitesmoke;
@@ -873,14 +883,14 @@ body{
     /* Place the container to the left */
     .left-2 {
     padding: 0px 40px 10px 0px;
-    right: -25%;
+    right: -18%; /*ADJUST CONTAINER LOCATION*/
     }
     
     /* Place the container to the right */
     .right-2 {
     margin-top: -200px;
     padding: 0px 0px 0px 70px;
-    left: 50%;
+    left: 48.25%; /*ADJUST CONTAINER LOCATION*/
     }
     
     /* Add arrows to the left container (pointing right) */
@@ -889,7 +899,7 @@ body{
     position: absolute;
     top: 13px;
     z-index: 1;
-    left: 44.75%;
+    left: 48%; /*ADJUST ARROW LOCATION*/
     border: medium solid #bf5700;
     border-width: 15px 0 15px 15px;
     border-color: transparent transparent transparent #bf5700;
@@ -901,7 +911,7 @@ body{
     position: absolute;
     top: 13px;
     z-index: 1;
-    left: 3.25%;
+    left: 6.25%; /*ADJUST ARROW LOCATION*/
     border: medium solid #bf5700;
     border-width: 15px 15px 15px 0;
     border-color: transparent #bf5700 transparent transparent;
@@ -909,11 +919,11 @@ body{
     
     /* Fix the circle for containers on the right side */
     .right-2::after {
-        left: -1.5%;
+        left: 1.65%; /* ADJUST CIRCLE LOCATION*/
     }
-    /* Fix the circle for containers on the right side */
+    /* Fix the circle for containers on the left side */
     .left-2::after {
-        left: 48.5%;
+        left: 52.1%; /* ADJUST CIRCLE LOCATION*/
     }
 #skills{
     width: 100%;
@@ -1251,25 +1261,7 @@ body{
 
 
 /* Blog Page */
-.blog-header{
-    height: auto;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-    font-family: raleway;
-    color: #cfcfcf;
-    padding:10px;
-    padding-bottom: 30px;
-    padding-top: 60px;
-    font-weight: 900;
-    letter-spacing: 3px;
-}
 
-.blog-header .header-caption{
-    letter-spacing: 0;
-}
 .cursor{
     height: 50px;
     width: 50px;
@@ -1301,18 +1293,43 @@ body{
     transition:  scale .4s ease;
 }
 
-#blog{
-    background: #101010;
-    display: none;
-    color:whitesmoke;
-    width: 100%;
-    height: auto;
+.blog{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
 }
+
+.blog-header{
+    height: auto;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: roboto;
+    color: #cfcfcf;
+    padding:0px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #bf5700;
+    border-top: 2px solid #bf5700;
+    border-radius: 17px;
+}
+
+.blog-header .header-caption{
+    letter-spacing: 0;
+}
+
 .blog-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-top: 60px;
 }
 .blogs{
     height: 470px;
@@ -1332,20 +1349,18 @@ body{
     transition: all .65s ease;
     position: relative;
 }
-.blogs .color{
-    color: #be5608;
-    font-weight: 800; 
-}
+
+
 .blog-date{
     position: absolute;
     left: 0;
     bottom: 0;
     background: #bf5700;
     color: white;
-    font-size: 13px;
+    font-size: 16px;
     text-align: center;
-    font-weight: 400;
-    font-family: poppins;
+    font-weight: 600;
+    font-family: roboto;
     padding: 3px;
     transition: all .4s ease;
     width: 25%;
@@ -1361,7 +1376,7 @@ body{
   width: 100%;
   text-align: center;
   vertical-align: center;
-  font-family: poppins;
+  font-family: roboto;
   color: #cfcfcf;
   background-color: #1d1d1d;
   transition: all .5s ease;
@@ -1371,24 +1386,91 @@ body{
   font-weight: 500;
   height: 20%;
   padding: 20px;
-  margin-top: 0.1em;
+  margin-top: 0.2em;
   letter-spacing: 1px;
 }
 .blog-text p{
-    font-size: 15px;
-    opacity: .8;
-    font-weight: 50;
+    font-size: 17px;
+    opacity: 1;
+    font-weight: 300;
     height: 80%;
-    padding: 15px;
+    padding: 40px;
     padding-top: 0px;
     letter-spacing: 1px;
-  }
-.blogs:hover .img{
-      transform: translateY(-40%);
-  }
-.blogs:hover .blog-text{
-    transform: translateY(-40%);
 }
+
+.blogs .project-button{
+    background-color: #be5608;
+    color: white;
+    font-weight: 500; 
+    padding: 8px;
+    padding-right: 32px;
+    padding-left: 32px;
+    border-radius: 5px;
+}
+.blogs:hover .img{
+      transform: translateY(-70%);
+}
+.blogs:hover .blog-text{
+    transform: translateY(-70%);
+}
+.blogs:hover .augre{
+    transform: translateY(-45%);
+}
+.blogs:hover .augre{
+    transform: translateY(-45%);
+}
+.blogs:hover .ar-control{
+    transform: translateY(-60%);
+}
+.blogs:hover .ar-control{
+    transform: translateY(-60%);
+}
+.blogs:hover .haptics{
+    transform: translateY(-90%);
+}
+.blogs:hover .haptics{
+    transform: translateY(-90%);
+}
+
+.blogs:hover .auto-car{
+    transform: translateY(-95%);
+}
+.blogs:hover .auto-car{
+    transform: translateY(-95%);
+}
+.blogs:hover .robot-latency{
+    transform: translateY(-105%);
+}
+.blogs:hover .robot-latency{
+    transform: translateY(-105%);
+}
+.blogs:hover .motion-planning{
+    transform: translateY(-105%);
+}
+.blogs:hover .motion-planning{
+    transform: translateY(-105%);
+}
+.blogs:hover .kilnbot{
+    transform: translateY(-105%);
+}
+.blogs:hover .kilnbot{
+    transform: translateY(-105%);
+}
+.blogs:hover .senior-design{
+    transform: translateY(-105%);
+}
+.blogs:hover .senior-design{
+    transform: translateY(-105%);
+}
+.blogs:hover .shadow-arm{
+    transform: translateY(-105%);
+}
+.blogs:hover .shadow-arm{
+    transform: translateY(-105%);
+}
+
+
 .blogs a{
     text-decoration: none;
     color: #cfcfcf;
@@ -2083,8 +2165,8 @@ Mobile Phone
         position: relative;
         margin: 20px;
         border-radius: 10px;
-        padding: 10px;
-        width: 70vw;
+        padding: 4px;
+        max-width: 70vw;
         height: auto;
         transition: all .8s ease;
     }
@@ -2211,48 +2293,20 @@ Mobile Phone
                 font-weight: 800; 
             }
             .blog-date{
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                color: white;
-                font-size: 13px;
-                text-align: center;
-                font-weight: 400;
-                font-family: poppins;
-                padding: 3px;
-                width: 35%;
-                height: auto;
+                font-size: 14px;
+                font-weight: 300;
             }
             .blogs .img img{
                 height: 100%;
                 width: 100%;
                 transition: all .65s ease;
             }
-            .blog-text{
-              height: auto;
-              width: 100%;
-              text-align: center;
-              vertical-align: center;
-              font-family: poppins;
-              color: #cfcfcf;
-              background-color: #1d1d1d;
-              transition: all .5s ease;
-            }
+
             .blog-text h3{
-              font-size: 18px;
-              font-weight: 200;
-              height: 15%;
-              padding: 10px;
-              letter-spacing: 1px;
+              font-size: 20px;
             }
             .blog-text p{
-                font-size: 12px;
-                opacity: .8;
-                font-weight: 50;
-                height: 85%;
-                padding: 15px;
-                padding-top: 0px;
-                letter-spacing: 1px;
+                font-size: 15px;
               }
             .blogs:hover .img{
                   transform: translateY(0%);
@@ -2514,19 +2568,9 @@ Tablets
         justify-content: center;
         height: auto;
         width: 100%;
-        padding:10px;
         text-align: center;
     }
-    
-    .about-header{
-        color: #cfcfcf;
-        justify-content: center;
-        font-size: 45px;
-        font-family: raleway;
-        padding:15px;
-        font-weight: 900;
-    }
-    
+
     .about-first-paragraph{
         color: #cfcfcf;
         justify-content: center;
@@ -2536,6 +2580,7 @@ Tablets
         padding: 25px;
         font-weight: 400;
     }
+
     .about-first-paragraph .color{
         font-size: 35px
     }
@@ -2561,9 +2606,8 @@ Tablets
         justify-content: center;
         width: 100vw;
         height: auto;
-        padding-left: 10px;
-        padding-right: 10px;
         flex-direction: column;
+        padding-bottom: 50px;
     }
     .about-img img{
         width: 100%;
@@ -2576,37 +2620,84 @@ Tablets
         height:auto;
         padding: 30px;
         padding-top: 10px;
+
+        max-width: 100%;
+        /*background-color: #dd7631;*/
+        padding: 0px;
+        margin: 0px;
+        margin-right: 0;
+        padding-top: 0px;
+        /*padding: 30px;*/
+        text-align: center;
+        overflow: hidden;
+    }
+    .about-side-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about-side-info-title{
+        /*background-color:#14a704;*/
+        text-align: left;
+        font-family: roboto;
+        font-size: 28px;
+        letter-spacing: 0.05em;
+        font-weight: 400;
+        margin-bottom: 0.5em;
+    }
+    .about-side-info-title-paragraph{
+        /*background-color:#a70469;*/
+        font-size: 16px;
+        font-family: roboto;
+        text-align: center;
+        font-weight: 300;
+        line-height: 1.5;
+        width: 70vw;
     }
     
     .about-top-info {
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;
         display: flex;
         flex-wrap: wrap;
-        /*margin-top: calc(-1 * var(--bs-gutter-y));
-        margin-right: calc(-.5 * var(--bs-gutter-x));
-        /*margin-left: calc(-.5 * var(--bs-gutter-x));*/
-        text-align: left;
-        align-items: left;
-        justify-content: left;
+        /*background-color:#0407a7;*/
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        padding-top: 0;
+        font-weight: 300;
     }
-
+    .about-top-info-text{
+        font-size: 16px;
+        font-family: roboto;
+    }
+    
     .about-top-info ul {
         list-style: none;
-        padding: 0;
+        padding-top: 0;
+        padding: 1em;
     }
-
+    
     .about-top-info ul i {
-        font-size: 16px;
-        margin-right: 5px;
+        /*font-size: 20px;*/
         color: #bf5700;
-        font-weight: 1000;
-        line-height: 0;
+        font-weight: 2000;
+        line-height: 2;
+        padding: 0.1em;
     }
     
     *, ::after, ::before {
         box-sizing: border-box;
     }
+
+    .about-bio-text{
+        width: 70vw;
+    }
+    .bottom-header{
+        display: none;
+    }
+
 
     .cv a button{
         border:none;
@@ -2643,16 +2734,18 @@ Tablets
     .service-description h2{
         padding: 10px;
         margin: 5px;
-        font-weight: 200;
+        font-weight: 400;
         font-size: 22px;
     }
     .service-description p{
         padding: 20px;
-        padding-top: 10px;
+        padding-top: 0px;
         font-weight: 200;
         font-size: 15px;
         color:#cfcfcf;
     }
+
+
     .skill{
         width:40%;
     }
@@ -2750,49 +2843,19 @@ Tablets
         font-weight: 800; 
     }
     .blog-date{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        color: white;
         font-size: 13px;
-        text-align: center;
-        font-weight: 400;
-        font-family: poppins;
-        padding: 3px;
-        width: 35%;
-        height: auto;
     }
     .blogs .img img{
         height: 100%;
         width: 100%;
         transition: all .65s ease;
     }
-    .blog-text{
-      height: auto;
-      width: 100%;
-      text-align: center;
-      vertical-align: center;
-      font-family: poppins;
-      color: #cfcfcf;
-      background-color: #1d1d1d;
-      padding: 10px;
-      transition: all .5s ease;
-    }
+
     .blog-text h3{
-      font-size: 20px;
-      font-weight: 200;
-      height: 15%;
-      padding: 10px;
-      letter-spacing: 1px;
+      font-size: 24px;
     }
     .blog-text p{
-        font-size: 15px;
-        opacity: .8;
-        font-weight: 50;
-        height: 85%;
-        padding: 15px;
-        padding-top: 0px;
-        letter-spacing: 1px;
+        font-size: 17px;
       }
     .blogs:hover .img{
           transform: translateY(0%);
@@ -2951,7 +3014,7 @@ Tablets
 /* ////////////////////////////////////////////////////////////// 
 @media all and (max-width: 9000px) and (min-width: 1441px)*/
 /*
-Not Sure
+Monitor
 */
 
 @media all and (max-width: 9000px) and (min-width: 1441px){
@@ -2969,26 +3032,31 @@ Not Sure
         display: flex;
         align-items:center;
         justify-content: center;
-        width: 80vw;
+        width: 90vw;
         height: 100%;
         flex-direction: row;
         /*background-color: #035aa6;*/
+        padding-left: 7%;
     }
     .about-img img{
         padding: 0px;
         margin: 0px;
-        height: 50vh;
+        height: auto;
         width: 100%;
         animation: opacity 1.4s ease ;
         border-radius: 1em;
+        max-width: 625px;
+        max-height: 500px;
     }
     .about-img {
         height: 45vh;
         width: 100%;
+        max-width: 625px;
         /*background-color: #dd7631;*/
         padding: 0px;
         margin: 0px;
         margin-right: 3em;
+        text-align: right;
         /*padding: 30px;*/
     }
     .about-side-info{
@@ -3014,6 +3082,7 @@ Not Sure
         text-align: left;
         font-weight: 300;
         line-height: 1.5;
+        max-width: 550px;
     }
 
     .about-top-info {
@@ -3094,7 +3163,8 @@ Not Sure
     }
 
     .card{
-        width: 20vw;
+        width: 50%;
+        max-width: 400px;
         margin-top: -20px;
         font-family: roboto;
         border: 10px solid whitesmoke;
@@ -3150,7 +3220,7 @@ Not Sure
     /* Place the container to the left */
     .left-2 {
     padding: 0px 40px 10px 0px;
-    right: -25%;
+    right: -22%;
     }
     
     /* Place the container to the right */
@@ -3166,7 +3236,7 @@ Not Sure
     position: absolute;
     top: 13px;
     z-index: 1;
-    left: 44.75%;
+    left: 49.75%;
     border: medium solid #bf5700;
     border-width: 15px 0 15px 15px;
     border-color: transparent transparent transparent #bf5700;
@@ -3188,9 +3258,9 @@ Not Sure
     .right-2::after {
         left: -1.5%;
     }
-    /* Fix the circle for containers on the right side */
+    /* Fix the circle for containers on the left side */
     .left-2::after {
-        left: 48.5%;
+        left: 54.5%;
     }
     
     
@@ -3221,8 +3291,9 @@ Not Sure
         z-index: 2;
         position: relative;
         margin: 5px;
+        margin-top: 17px;
         border-radius: 10px;
-        padding: 10px;
+        padding: 4px;
         height:200px;
         width: auto;
         transition: all .8s ease;
@@ -3286,38 +3357,104 @@ Not Sure
         transition: all .65s ease;
     }
     .blog-text{
-      height: 80%;
-      width: 100%;
-      text-align: center;
-      vertical-align: center;
-      font-family: poppins;
-      color: #cfcfcf;
-      background-color: #1d1d1d;
-      transition: all .5s ease;
-    }
-    .blog-text h3{
-      font-size: 24px;
-      font-weight: 500;
-      height: 20%;
-      padding: 20px;
-      margin-top: 0.1em;
-      letter-spacing: 1px;
-    }
-    .blog-text p{
-        font-size: 15px;
-        opacity: .8;
-        font-weight: 50;
         height: 80%;
-        padding: 15px;
-        padding-top: 0px;
+        width: 100%;
+        text-align: center;
+        vertical-align: center;
+        font-family: roboto;
+        color: #cfcfcf;
+        background-color: #1d1d1d;
+        transition: all .5s ease;
+      }
+      .blog-text h3{
+        font-size: 24px;
+        font-weight: 500;
+        height: 20%;
+        padding: 20px;
+        margin-top: 0.2em;
         letter-spacing: 1px;
       }
-    .blogs:hover .img{
-          transform: translateY(-40%);
+      .blog-text p{
+          font-size: 18px;
+          opacity: 1;
+          font-weight: 300;
+          height: 80%;
+          padding: 40px;
+          padding-top: 0px;
+          letter-spacing: 1px;
       }
-    .blogs:hover .blog-text{
-        transform: translateY(-40%);
-    }
+      
+      .blogs .project-button{
+          background-color: #be5608;
+          color: white;
+          font-weight: 500; 
+          padding: 8px;
+          padding-right: 32px;
+          padding-left: 32px;
+          border-radius: 5px;
+      }
+      .blogs:hover .img{
+            transform: translateY(-70%);
+      }
+      .blogs:hover .blog-text{
+          transform: translateY(-70%);
+      }
+      .blogs:hover .augre{
+          transform: translateY(-45%);
+      }
+      .blogs:hover .augre{
+          transform: translateY(-45%);
+      }
+      .blogs:hover .ar-control{
+          transform: translateY(-50%);
+      }
+      .blogs:hover .ar-control{
+          transform: translateY(-50%);
+      }
+      .blogs:hover .haptics{
+          transform: translateY(-72%);
+      }
+      .blogs:hover .haptics{
+          transform: translateY(-72%);
+      }
+      
+      .blogs:hover .auto-car{
+          transform: translateY(-78%);
+      }
+      .blogs:hover .auto-car{
+          transform: translateY(-78%);
+      }
+      .blogs:hover .robot-latency{
+          transform: translateY(-82%);
+      }
+      .blogs:hover .robot-latency{
+          transform: translateY(-82%);
+      }
+      .blogs:hover .motion-planning{
+          transform: translateY(-88%);
+      }
+      .blogs:hover .motion-planning{
+          transform: translateY(-88%);
+      }
+      .blogs:hover .kilnbot{
+          transform: translateY(-88%);
+      }
+      .blogs:hover .kilnbot{
+          transform: translateY(-88%);
+      }
+      .blogs:hover .senior-design{
+          transform: translateY(-83%);
+      }
+      .blogs:hover .senior-design{
+          transform: translateY(-83%);
+      }
+      .blogs:hover .shadow-arm{
+          transform: translateY(-83%);
+      }
+      .blogs:hover .shadow-arm{
+          transform: translateY(-83%);
+      }
+      
     .contact-header{
         height: auto;
         width: 100%;

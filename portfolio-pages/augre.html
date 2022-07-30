@@ -84,13 +84,13 @@
         <!--page write up-->
         <a id="about-local"></a>
         <div class="about-content">
-            <div class="section-heading">
+            <div class="section-heading first">
                 About
             </div>
             <div class="section-content">
-                My team and I in the <i><a href="https://robotics.me.utexas.edu/">Nuclear and Applied Robotics Group</a></i>
+                My team and I in the <a href="https://robotics.me.utexas.edu/">Nuclear and Applied Robotics Group</a>
                 created an augmented reality base human-robot teaming system 
-                called AugRE. The application allows users to supervise and command 
+                called AugRE. The application enables users to supervise and command 
                 robotic teammates. AugRE allows for HoloLens 2 users to localize with
                 a team of heterogenous robotics. Users are able to visualize the location of both
                 robot and HoloLens' users in the physical world with virtual AR labels that track all agents throughout space. The framework
@@ -114,8 +114,8 @@
                 Unreal Engine 4 and consisted of three main components: 1) an Unreal Engine plugin called RobofleetUnrealClient,
                 2) a library of ROS message structs that can be interperted by Unreal Engine, 3) the Microsoft Mixed Reality Toolkit.
                 <br>
-                <i><a href="https://github.com/UTNuclearRoboticsPublic/RobofleetUnrealClient">Robofleet Unreal Client</a></i> is a modified 
-                <i><a href="https://github.com/ut-amrl/robofleet_client/tree/97ed087e9d86c94acd0370614fd16fa49f65821d">Robofleet Client</a></i> used to communicate seamlessly with large teams of 
+                <a href="https://github.com/UTNuclearRoboticsPublic/RobofleetUnrealClient">Robofleet Unreal Client</a> is a modified 
+                <a href="https://github.com/ut-amrl/robofleet_client/tree/97ed087e9d86c94acd0370614fd16fa49f65821d">Robofleet Client</a> used to communicate seamlessly with large teams of 
                 robotic agents and other HoloLens users. Robofleet is a communication method developed recently for a scalable lightweight method of 
                 communicating with a large team of heterogenous team of robotic agents.
                 From the image above, you can see that the HoloLens 2 users have the AugRE application downloaded to them. All the
@@ -129,19 +129,23 @@
                 Demos
             </div>
             <div class="section-content">
-                <iframe width="560" height="315" 
+                <div class="demo-video">
+                <iframe class="responsive-iframe" width="560" height="315" 
                     src="https://www.youtube.com/embed/4oueRXrSgSI?mute=1" 
                     title="AugRE: Augmented Robot Environment" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe> 
+                </div>
             </div>
             <br>
             <div class="section-heading">
                 Future Work
             </div>
             <div class="section-content">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                AugRE was built as the groundwork for much more research to come. Future work will include 
+                enhanced localizations with loop closures. It will also include better predictions from the 
+                robot for what the human will do next.
             </div>
             <a id="publications"></a>
             <br>

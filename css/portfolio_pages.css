@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=roboto:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=roboto:500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap');
+
 
 
 
@@ -35,7 +36,7 @@ Laptop
     padding: 0;
     border: 0;
     margin-top: 0em;
-    font-family: poppins;
+    font-family: roboto;
 }
 
 .page-links{
@@ -63,7 +64,9 @@ Laptop
     margin-top: 10px;
     margin-bottom: 10px;
     transition: all .4s ease;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
     text-decoration: none;
 }
 
@@ -126,7 +129,7 @@ Laptop
     align-items: center;
     justify-content: left;
     flex-direction: column;
-    font-family:poppins;
+    font-family:roboto;
 }
 
 .navigation-links a{
@@ -250,7 +253,7 @@ Laptop
     flex-direction: column;
     align-items: center;
     overflow: auto;
-    font-family: poppins;
+    font-family: roboto;
 }
 
 .main-container{
@@ -264,9 +267,9 @@ Laptop
 .main-container .title {
     /*background-color: #13d654;*/
     margin-top: 2.65em;
-    font-size: 40px;
-    font-weight: 900;
-    font-family: raleway;
+    font-size: 46px;
+    font-weight: 600;
+    font-family: roboto;
     letter-spacing: 3px;
     color: whitesmoke;
 }
@@ -315,11 +318,15 @@ Laptop
 .section-heading{
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 34px;
+    font-weight: 500;
     width: 95%;
     color: #bf5700;
+    letter-spacing: 2px;
 }
-
+.first{
+    margin-top: 30px;
+}
 .section-break{
     width:100%;
     height: 1px;
@@ -334,12 +341,14 @@ Laptop
     text-align:justify;
     color: #cfcfcf;
     font-family: roboto;
-    font-size: 1.2em;
+    font-size: 17px;
+    font-weight: 300;
     line-height: 1.3em;
 }
 .section-content a{
     text-decoration: underline;
     color: #cfcfcf;
+
 }
 .section-content img{
     display: block;
@@ -349,7 +358,7 @@ Laptop
 }
 
 .section-content .publication-section-content{
-    font-size: 0.8em;
+    font-size: 15px;
     line-height: 1.3em;
     text-align: justify;
 }
@@ -367,7 +376,7 @@ Laptop
     width: 100%;
     padding: 13px;
     color: whitesmoke;
-    font-family: poppins;
+    font-family: roboto;
     justify-content: center;
     align-items: center;
     padding-bottom: 0.75em;
@@ -382,7 +391,7 @@ Laptop
 .footer-image{
     display: flex;
     flex-direction: row;
-    font-family: poppins;
+    font-family: roboto;
     justify-content: center;
     align-items: center;
     padding-top: 5px;
@@ -413,47 +422,58 @@ Mobile Phone
 */
 @media only screen and (max-width: 550px){
 
-    .page-links{
-        visibility: hidden;
-    }
+.page-links{
+    visibility: hidden;
+}
 
     /* PAGE CONTENT */
 .portfolio-content{
     display:flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items:center;
+    margin: 0;
+    padding: 0;
+
+
 }
 
 .main-container{
     display: flex;
     flex-direction: column;
-    margin-top: 0em;
-    width: 40%;
     align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items:center;
+    margin-top: 0px;
+    width: 100%;
 
 }
 
 .main-container .title {
-    /*background-color: #13d654;*/
-    margin-top: 4em;
-    font-size: 20px;
-    font-weight: 400px;
-    font-family: raleway;
-    letter-spacing: 3px;
+    margin-top: 80px;
+    font-family: roboto;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
     color: #cfcfcf;
 }
 
 .main-container .intro {
     /*background-color: #13d654;*/
-    margin-top: 0.75em;
+    margin-top: 40px;
     font-size: 10px;
     align-items: center;
     justify-content: center;
     justify-items: center;
+    text-align: center;
 }
 
 .intro img{
-    width: 100%;
+    width: 88%;
     border-radius: 0.25em;
     text-align: center;
 }
@@ -469,7 +489,7 @@ Mobile Phone
     margin-top: 3.5em;
     border: 0px;
     padding: 0px;
-    width: 70%;
+    width: 95%;
     justify-content: center;
     align-items: center;
 }
@@ -477,7 +497,25 @@ Mobile Phone
 #demos{
     position: relative;
     top: -3.5em;
+    text-align: left;
 }
+
+.demo-video{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 
 #future-work{
     position: relative;
@@ -491,7 +529,7 @@ Mobile Phone
 .section-heading{
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 26px;
     width: 95%;
     color: #bf5700;
 }
@@ -509,6 +547,7 @@ Mobile Phone
     margin-bottom: 0px;
     text-align: justify;
     color: #cfcfcf;
+    font-size: 16px;
 }
 
 

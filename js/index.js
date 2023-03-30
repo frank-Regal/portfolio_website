@@ -26,7 +26,6 @@ $(function(){
         gsap.to('#navigation-content',.6,{y:"-100%"});
     });
    }); 
-
 $(function(){
     var TxtRotate = function(el, toRotate, period) {
         this.toRotate = toRotate;

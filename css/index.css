@@ -89,6 +89,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 #navigation-bar{
     position: fixed;
     height: 100vh;
